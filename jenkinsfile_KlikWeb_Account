@@ -1,0 +1,112 @@
+pipeline {
+    agent any
+    tools
+            {
+                maven 'Maven 3.6.3'
+                jdk 'jdk 11.0.6'
+            }
+    options
+            {
+                buildDiscarder(
+                        logRotator(
+                                daysToKeepStr: '15',
+                                artifactDaysToKeepStr: '15',
+                        )
+                )
+                disableConcurrentBuilds()
+            }
+    triggers
+            {
+                // MINUTE HOUR DOM MONTH DOW
+                cron('*/15 8-17 * * 1-5')
+            }
+    stages
+            {
+                stage('Clean')
+                        {
+                            steps
+                                    {
+                                        script
+                                                {
+                                                    if (isUnix()) {
+                                                        sh 'mvn --batch-mode clean'
+                                                    } else {
+                                                        bat 'mvn --batch-mode clean'
+                                                    }
+                                                }
+                                    }
+                        }
+                stage('Build')
+                        {
+                            steps
+                                    {
+                                        script
+                                                {
+                                                    if (isUnix()) {
+                                                        //   sh 'mvn --batch-mode compile'
+                                                    } else {
+                                                        //  bat 'mvn --batch-mode compile'
+                                                    }
+                                                }
+                                    }
+                        }
+                stage('UnitTests')
+                        {
+                            steps
+                                    {
+                                        script
+                                                {
+                                                    if (isUnix()) {
+                                                        sh 'mvn -f pom_account.xml clean test'
+                                                    } else {
+                                                        bat 'mvn -f pom_account.xml clean test'
+                                                    }
+                                                }
+                                    }
+                            post
+                                    {
+                                        always {
+                                            echo 'i have finished'
+                                            //archiveArtifacts artifacts: 'allure-report/index.html', followSymlinks: false
+                                            allure includeProperties: false, jdk: '', results: [[path: 'target/allure-results']]
+                                            cleanWs()
+                                        }
+                                    }
+                        }
+                stage('Sanity check')
+                        {
+                            steps
+                                    {
+                                        script
+                                                {
+                                                    if (isUnix()) {
+                                                        // sh 'mvn --batch-mode checkstyle:checkstyle pmd:pmd pmd:cpd com.github.spotbugs:spotbugs-maven-plugin:spotbugs'
+                                                    } else {
+                                                        //  bat 'mvn --batch-mode checkstyle:checkstyle pmd:pmd pmd:cpd com.github.spotbugs:spotbugs-maven-plugin:spotbugs'
+                                                    }
+                                                }
+                                    }
+                        }
+            }
+    post {
+        always {
+            echo 'Sending Report'
+
+        }
+        success {
+            echo 'Sukses'
+        }
+        failure {
+            slackSend(color: '#FF0D00', message: "Terdapat Test yang gagal pada Account New Website Klik Indomaret pada build ke:'  [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+
+        }
+        unstable {
+            slackSend(color: '#F28507', message: "UNSTABLE: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+
+        }
+        changed {
+            echo 'This will run only if the state of the Pipeline has changed'
+            echo 'For example, if the Pipeline was previously failing but is now successful'
+        }
+    }
+}

@@ -17,6 +17,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -27,21 +30,73 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.HomePageTest.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.AmbilPaketTest.ambilPaket.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CancelTransactionTest.cancelTokoAntarKeToko.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CancelTransactionTest.cencelTitipPaketKeToko.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CariTokoTest.cariToko.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ForgotPasswordTest.forgotPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ForgotPasswordTest.forgotPasswordNotFound.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.ForgotPasswordTest.goToForgotPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePageTest.checkTarif.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.HomePageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePageTest.failedTracking.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePageTest.failedTrackingMultiResi.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePageTest.failedTrackingResi.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePageTest.kirimSekarang.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePageTest.membership.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePageTest.trackingMultiResi.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.InformasiTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.InformasiTest.faq.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.InformasiTest.layananDanProgram.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.InformasiTest.tentangKami.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.InformasiTest.tutorial.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.InformasiTest.verifySocialMedia.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.cencelTitipPaketKeToko.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.checkJamJemputTransactionJemputDanAmbilDiToko.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.jemputDanAmbilDiToko.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.jemputDanAntarPaket.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.jemputPaket.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.titipPaketKeToko.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.tokoAntarKeAlamat.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KirimSekarangTest.tokoAntarKeToko.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.loginFailurePasswordLessThan.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.loginTestWorngPassword.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.loginTestWorngUsername.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.logoutTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.validLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MembershipTest.clickButtonPelajariMembership.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NotificationTest.deleteNotification.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NotificationTest.goToDetilInfoPromoTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NotificationTest.goToNotificationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NotificationTest.goToStatusPaketTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NotificationTest.showAllNotification.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProfileTest.closeAccountBlankPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProfileTest.closeAccountCancel.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProfileTest.closeAccountFailureBlankPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProfileTest.editPasswordTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProfileTest.editProfileTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.registrationConfirmPassWrong.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.registrationEmailNotValid.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.registrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.registrationValid.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.registrationWrongConfirmPass.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RiwayatTest.goToDetilRiwayat.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RiwayatTest.goToRiwayat.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RiwayatTest.unduhLabelResi.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SurveyTest.goToSurvey.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.homePageTest.Tracking.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.homePageTest.failedTracking.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.homePageTest.failedTrackingMultiResi.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.homePageTest.verifyHomePage.executor&quot;: &quot;Run&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/automation_backup/klikindomaret-v2-klik-indomaret-test-website/src/main/java/com/automation/screens&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/automation_backup/IPP-test-website&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -56,10 +111,14 @@
       <recent name="com.automation" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.automation.utils" />
+      <recent name="com.automation.apptests.Transaction" />
+      <recent name="com.automation.apptests.HomePagesTest" />
+      <recent name="com.automation.screen.uipages.profile" />
+      <recent name="com.automation.apptests.Profile" />
+      <recent name="com.automation.screen.uipages.transaction" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.logoutTest">
+  <component name="RunManager" selected="TestNG.LoginTest.validLoginTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="klikindomaret-v2-klik-indomaret-test-website" />
       <method v="2">
@@ -71,34 +130,17 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CancelTransactionTest.cancelTokoAntarKeAlamat" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.apptests.HomePagesTest.*" />
+          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest.failedTracking" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPP-test-website" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.apptests.HomePagesTest.HomePageTest" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
-      <option name="METHOD_NAME" value="failedTracking" />
+      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.CancelTransactionTest" />
+      <option name="METHOD_NAME" value="cancelTokoAntarKeAlamat" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -106,17 +148,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.failedTrackingMultiResi" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CancelTransactionTest.cancelTokoAntarKeToko" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.apptests.HomePagesTest.*" />
+          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
-      <option name="METHOD_NAME" value="failedTrackingMultiResi" />
+      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.CancelTransactionTest" />
+      <option name="METHOD_NAME" value="cancelTokoAntarKeToko" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -124,7 +166,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.loginFailurePasswordLessThan" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CancelTransactionTest.cencelTitipPaketKeToko" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.CancelTransactionTest" />
+      <option name="METHOD_NAME" value="cencelTitipPaketKeToko" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.validLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
@@ -134,7 +194,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.apptests.LoginTest" />
       <option name="MAIN_CLASS_NAME" value="com.automation.apptests.LoginTest.LoginTest" />
-      <option name="METHOD_NAME" value="loginFailurePasswordLessThan" />
+      <option name="METHOD_NAME" value="validLoginTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,17 +202,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.logoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.apptests.LoginTest.*" />
+          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.LoginTest" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.LoginTest.LoginTest" />
-      <option name="METHOD_NAME" value="logoutTest" />
+      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.TransactionTest" />
+      <option name="METHOD_NAME" value="checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -162,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.logoutTest" />
-        <item itemvalue="TestNG.LoginTest.loginFailurePasswordLessThan" />
-        <item itemvalue="TestNG.HomePageTest" />
-        <item itemvalue="TestNG.HomePageTest.failedTrackingMultiResi" />
-        <item itemvalue="TestNG.HomePageTest.failedTracking" />
+        <item itemvalue="TestNG.LoginTest.validLoginTest" />
+        <item itemvalue="TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" />
+        <item itemvalue="TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat" />
+        <item itemvalue="TestNG.CancelTransactionTest.cencelTitipPaketKeToko" />
+        <item itemvalue="TestNG.CancelTransactionTest.cancelTokoAntarKeToko" />
       </list>
     </recent_temporary>
   </component>
@@ -179,5 +239,16 @@
       <updated>1748945289293</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

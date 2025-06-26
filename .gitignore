@@ -1,0 +1,10 @@
+/.idea
+/allure-report/
+/target
+/test-output
+/logs/
+/allure-results
+#/src/test/java/com/edts/automation/environment/uat.properties
+#/src/test/java/com/edts/automation/resources/testdata
+#/src/test/java/com/edts/automation/resources/apps
+*.iml
