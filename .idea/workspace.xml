@@ -5,44 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="[Guritno] First commit for web automation">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/UbahAkundiProfil_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/forgotPassword_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/registration_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/validasiAkunterhubung_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/alamat/TambahalamatdariDaftaralamat_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/alamat/TambahalamatdiProfil_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/alamat/tambahalamat_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/alamat/ubahalamat_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/cart/editCartBanyakStock_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/cart/hapusCart_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/daftarTransaksi/batalkan_transaksi_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/daftarTransaksi/daftar_transaksi_BeliLagi_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/daftarTransaksi/daftar_transaksi_BelumAdaTransaksi_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/daftarTransaksi/daftar_transaksi_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/homePage/KategoriHome_ATCBeforeLogin_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/homePage/KategoriHome_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/homePage/notification_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/pdp/pdp_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/pppBanner/pppBanner_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/search/FiltersSearchHrgTertinggi_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/search/SearchProdukNegatif_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/search/Search_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/search/filter_kategori_page_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/ambiltoko_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxEditCart_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxFromHomePage_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPLUrokok_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPesanAmbil_KartuKreditOnlineBCA_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPesanAmbil_PaymentPointIndomaret_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPesanAmbil_VirtualAccountLainnya_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPesanAmbil_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxProdukKombinasi_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxProdukPairPasangan_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxProdukPengganti_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/wishlist/pdp_validate_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/wishlist/pdp_validate_wishlist_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/wishlist/pdp_wishlist_unwishlist_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/wishlist/wishlist_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +21,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sqaipp"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sqaipp/web-automation.git",
+    "accountId": "d3ffc3ea-913e-4c04-aae5-14db5e5e4fe0"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -158,7 +136,7 @@
       <recent name="com.automation.screen.uipages.transaction" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.validLoginTest">
+  <component name="RunManager" selected="TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="klikindomaret-v2-klik-indomaret-test-website" />
       <method v="2">
@@ -169,6 +147,24 @@
       <module name="klikindomaret-v2-klik-indomaret-test-website" />
       <option name="filePath" />
       <method v="2" />
+    </configuration>
+    <configuration name="AmbilPaketTest.ambilPaket" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.AmbilPaketTest" />
+      <option name="METHOD_NAME" value="ambilPaket" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="CancelTransactionTest.cancelTokoAntarKeAlamat" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
@@ -181,24 +177,6 @@
       <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
       <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.CancelTransactionTest" />
       <option name="METHOD_NAME" value="cancelTokoAntarKeAlamat" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CancelTransactionTest.cancelTokoAntarKeToko" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPP-test-website" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.CancelTransactionTest" />
-      <option name="METHOD_NAME" value="cancelTokoAntarKeToko" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -262,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat" />
+        <item itemvalue="TestNG.AmbilPaketTest.ambilPaket" />
         <item itemvalue="TestNG.LoginTest.validLoginTest" />
         <item itemvalue="TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" />
-        <item itemvalue="TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat" />
         <item itemvalue="TestNG.CancelTransactionTest.cencelTitipPaketKeToko" />
-        <item itemvalue="TestNG.CancelTransactionTest.cancelTokoAntarKeToko" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750922076478</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[Guritno] First commit for web automation">
+      <option name="closed" value="true" />
+      <created>1750922278551</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750922278551</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

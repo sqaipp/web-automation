@@ -186,8 +186,6 @@ public class riwayatPage extends BasePage {
         String[] options = {"Ubah data pengiriman", "Permintaan khusus pengirim", "Ganti Jasa Kirim"};
         Random rand = new Random();
         String randomReason = options[rand.nextInt(options.length)];
-        System.out.println("randomReason = "+randomReason);
-        System.out.println("randomReason type = "+randomReason.getClass().getName());
         for(WebElement reason : listReasonBatalAWB) {
             if(randomReason.equalsIgnoreCase(reason.getAttribute("data-value"))) {
                 reason.click();
