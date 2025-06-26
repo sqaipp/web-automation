@@ -4,7 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="" />
+    <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="[Guritno] First commit for web automation">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/UbahAkundiProfil_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/forgotPassword_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/registration_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/validasiAkunterhubung_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/alamat/TambahalamatdariDaftaralamat_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/alamat/TambahalamatdiProfil_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/alamat/tambahalamat_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/alamat/ubahalamat_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/cart/editCartBanyakStock_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/cart/hapusCart_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/daftarTransaksi/batalkan_transaksi_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/daftarTransaksi/daftar_transaksi_BeliLagi_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/daftarTransaksi/daftar_transaksi_BelumAdaTransaksi_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/daftarTransaksi/daftar_transaksi_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/homePage/KategoriHome_ATCBeforeLogin_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/homePage/KategoriHome_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/homePage/notification_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/pdp/pdp_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/pppBanner/pppBanner_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/search/FiltersSearchHrgTertinggi_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/search/SearchProdukNegatif_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/search/Search_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/search/filter_kategori_page_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/ambiltoko_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxEditCart_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxFromHomePage_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPLUrokok_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPesanAmbil_KartuKreditOnlineBCA_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPesanAmbil_PaymentPointIndomaret_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPesanAmbil_VirtualAccountLainnya_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxPesanAmbil_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxProdukKombinasi_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxProdukPairPasangan_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/transaksi/trxProdukPengganti_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/wishlist/pdp_validate_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/wishlist/pdp_validate_wishlist_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/wishlist/pdp_wishlist_unwishlist_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/wishlist/wishlist_test.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,80 +67,81 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HomePageTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.AmbilPaketTest.ambilPaket.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CancelTransactionTest.cancelTokoAntarKeToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CancelTransactionTest.cencelTitipPaketKeToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CariTokoTest.cariToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ForgotPasswordTest.forgotPassword.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ForgotPasswordTest.forgotPasswordNotFound.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ForgotPasswordTest.goToForgotPassword.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.checkTarif.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.failedTracking.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.failedTrackingMultiResi.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.failedTrackingResi.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.kirimSekarang.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.membership.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.trackingMultiResi.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.InformasiTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.InformasiTest.faq.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.InformasiTest.layananDanProgram.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.InformasiTest.tentangKami.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.InformasiTest.tutorial.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.InformasiTest.verifySocialMedia.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.cencelTitipPaketKeToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.checkJamJemputTransactionJemputDanAmbilDiToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.jemputDanAmbilDiToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.jemputDanAntarPaket.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.jemputPaket.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.titipPaketKeToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.tokoAntarKeAlamat.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.KirimSekarangTest.tokoAntarKeToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.loginFailurePasswordLessThan.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.loginTestWorngPassword.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.loginTestWorngUsername.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.logoutTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.validLoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MembershipTest.clickButtonPelajariMembership.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.NotificationTest.deleteNotification.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.NotificationTest.goToDetilInfoPromoTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.NotificationTest.goToNotificationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.NotificationTest.goToStatusPaketTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.NotificationTest.showAllNotification.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProfileTest.closeAccountBlankPassword.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProfileTest.closeAccountCancel.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProfileTest.closeAccountFailureBlankPassword.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProfileTest.editPasswordTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProfileTest.editProfileTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.registrationConfirmPassWrong.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.registrationEmailNotValid.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.registrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.registrationValid.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.registrationWrongConfirmPass.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RiwayatTest.goToDetilRiwayat.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RiwayatTest.goToRiwayat.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RiwayatTest.unduhLabelResi.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SurveyTest.goToSurvey.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.homePageTest.Tracking.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.homePageTest.failedTracking.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.homePageTest.failedTrackingMultiResi.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.homePageTest.verifyHomePage.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/automation_backup/IPP-test-website&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HomePageTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.AmbilPaketTest.ambilPaket.executor": "Run",
+    "TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat.executor": "Run",
+    "TestNG.CancelTransactionTest.cancelTokoAntarKeToko.executor": "Run",
+    "TestNG.CancelTransactionTest.cencelTitipPaketKeToko.executor": "Run",
+    "TestNG.CariTokoTest.cariToko.executor": "Run",
+    "TestNG.ForgotPasswordTest.forgotPassword.executor": "Run",
+    "TestNG.ForgotPasswordTest.forgotPasswordNotFound.executor": "Run",
+    "TestNG.ForgotPasswordTest.goToForgotPassword.executor": "Run",
+    "TestNG.HomePageTest.checkTarif.executor": "Run",
+    "TestNG.HomePageTest.executor": "Run",
+    "TestNG.HomePageTest.failedTracking.executor": "Run",
+    "TestNG.HomePageTest.failedTrackingMultiResi.executor": "Run",
+    "TestNG.HomePageTest.failedTrackingResi.executor": "Run",
+    "TestNG.HomePageTest.kirimSekarang.executor": "Run",
+    "TestNG.HomePageTest.membership.executor": "Run",
+    "TestNG.HomePageTest.trackingMultiResi.executor": "Run",
+    "TestNG.InformasiTest.executor": "Run",
+    "TestNG.InformasiTest.faq.executor": "Run",
+    "TestNG.InformasiTest.layananDanProgram.executor": "Run",
+    "TestNG.InformasiTest.tentangKami.executor": "Run",
+    "TestNG.InformasiTest.tutorial.executor": "Run",
+    "TestNG.InformasiTest.verifySocialMedia.executor": "Run",
+    "TestNG.KirimSekarangTest.cencelTitipPaketKeToko.executor": "Run",
+    "TestNG.KirimSekarangTest.checkJamJemputTransactionJemputDanAmbilDiToko.executor": "Run",
+    "TestNG.KirimSekarangTest.executor": "Run",
+    "TestNG.KirimSekarangTest.jemputDanAmbilDiToko.executor": "Run",
+    "TestNG.KirimSekarangTest.jemputDanAntarPaket.executor": "Run",
+    "TestNG.KirimSekarangTest.jemputPaket.executor": "Run",
+    "TestNG.KirimSekarangTest.titipPaketKeToko.executor": "Run",
+    "TestNG.KirimSekarangTest.tokoAntarKeAlamat.executor": "Run",
+    "TestNG.KirimSekarangTest.tokoAntarKeToko.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.loginFailurePasswordLessThan.executor": "Run",
+    "TestNG.LoginTest.loginTestWorngPassword.executor": "Run",
+    "TestNG.LoginTest.loginTestWorngUsername.executor": "Run",
+    "TestNG.LoginTest.logoutTest.executor": "Run",
+    "TestNG.LoginTest.validLoginTest.executor": "Run",
+    "TestNG.MembershipTest.clickButtonPelajariMembership.executor": "Run",
+    "TestNG.NotificationTest.deleteNotification.executor": "Run",
+    "TestNG.NotificationTest.goToDetilInfoPromoTest.executor": "Run",
+    "TestNG.NotificationTest.goToNotificationTest.executor": "Run",
+    "TestNG.NotificationTest.goToStatusPaketTest.executor": "Run",
+    "TestNG.NotificationTest.showAllNotification.executor": "Run",
+    "TestNG.ProfileTest.closeAccountBlankPassword.executor": "Run",
+    "TestNG.ProfileTest.closeAccountCancel.executor": "Run",
+    "TestNG.ProfileTest.closeAccountFailureBlankPassword.executor": "Run",
+    "TestNG.ProfileTest.editPasswordTest.executor": "Run",
+    "TestNG.ProfileTest.editProfileTest.executor": "Run",
+    "TestNG.RegistrationTest.registrationConfirmPassWrong.executor": "Run",
+    "TestNG.RegistrationTest.registrationEmailNotValid.executor": "Run",
+    "TestNG.RegistrationTest.registrationTest.executor": "Run",
+    "TestNG.RegistrationTest.registrationValid.executor": "Run",
+    "TestNG.RegistrationTest.registrationWrongConfirmPass.executor": "Run",
+    "TestNG.RiwayatTest.goToDetilRiwayat.executor": "Run",
+    "TestNG.RiwayatTest.goToRiwayat.executor": "Run",
+    "TestNG.RiwayatTest.unduhLabelResi.executor": "Run",
+    "TestNG.SurveyTest.goToSurvey.executor": "Run",
+    "TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko.executor": "Run",
+    "TestNG.homePageTest.Tracking.executor": "Run",
+    "TestNG.homePageTest.failedTracking.executor": "Run",
+    "TestNG.homePageTest.failedTrackingMultiResi.executor": "Run",
+    "TestNG.homePageTest.verifyHomePage.executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/USER/Documents/GitHub/web-automation",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\automation_backup\klikindomaret-v2-klik-indomaret-test-website\src\main\java\com\automation\screens" />
@@ -238,6 +278,15 @@
       <option name="presentableId" value="Default" />
       <updated>1748945289293</updated>
     </task>
+    <task id="LOCAL-00001" summary="[Guritno] First commit for web automation">
+      <option name="closed" value="true" />
+      <created>1750922076478</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750922076478</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,5 +299,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Guritno] First commit for web automation" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Guritno] First commit for web automation" />
   </component>
 </project>
