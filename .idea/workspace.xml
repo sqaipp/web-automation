@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xzeNXhKOHUGytbaYSZhcqDLZQr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.ForgotPasswordTest.goToForgotPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginFailurePasswordLessThan.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginTestWorngPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginTestWorngUsername.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.logoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.validLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.homePageTest.Tracking.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.homePageTest.failedTracking.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.homePageTest.failedTrackingMultiResi.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.homePageTest.verifyHomePage.executor&quot;: &quot;Run&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/automation_backup/klikindomaret-v2-klik-indomaret-test-website/src/main/java/com/automation/screens&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\automation_backup\klikindomaret-v2-klik-indomaret-test-website\src\main\java\com\automation\screens" />
+      <recent name="D:\automation_backup\klikindomaret-v2-klik-indomaret-test-website\driver" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.automation" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.automation.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LoginTest.logoutTest">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="klikindomaret-v2-klik-indomaret-test-website" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="klikindomaret-v2-klik-indomaret-test-website" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.HomePagesTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.failedTracking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.HomePagesTest.HomePageTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
+      <option name="METHOD_NAME" value="failedTracking" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.failedTrackingMultiResi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.HomePagesTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
+      <option name="METHOD_NAME" value="failedTrackingMultiResi" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginFailurePasswordLessThan" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.LoginTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.LoginTest.LoginTest" />
+      <option name="METHOD_NAME" value="loginFailurePasswordLessThan" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.logoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.LoginTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.LoginTest.LoginTest" />
+      <option name="METHOD_NAME" value="logoutTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginTest.logoutTest" />
+        <item itemvalue="TestNG.LoginTest.loginFailurePasswordLessThan" />
+        <item itemvalue="TestNG.HomePageTest" />
+        <item itemvalue="TestNG.HomePageTest.failedTrackingMultiResi" />
+        <item itemvalue="TestNG.HomePageTest.failedTracking" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="" />
+      <created>1748945289293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748945289293</updated>
+    </task>
+    <servers />
+  </component>
+</project>
