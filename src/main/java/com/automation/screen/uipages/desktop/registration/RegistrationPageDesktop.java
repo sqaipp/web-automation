@@ -1,17 +1,17 @@
-package com.automation.screen.uipages.registration;
+package com.automation.screen.uipages.desktop.registration;
 
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.interfaces.registration.RegistrationPage;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import static com.automation.utils.GenerateUtils.generateRandomEmail;
-
 @Slf4j
-public class registrationPage extends BasePage {
-    public registrationPage(WebDriver driver) {
+public class RegistrationPageDesktop extends BasePage implements RegistrationPage {
+    public RegistrationPageDesktop(WebDriver driver) {
         super(driver);
     }
 
@@ -20,7 +20,7 @@ public class registrationPage extends BasePage {
     @Step("Insert email for registration")
     public void inputEmail(String email) {
         log.info("Insert email for registration");
-        clickElementandSendKeys(fieldEmail, generateRandomEmail());
+        clickElementandSendKeys(fieldEmail,email);
     }
 
     @Step("Insert email for registration")
@@ -36,9 +36,20 @@ public class registrationPage extends BasePage {
         clickElementandSendKeys(fieldPassword, password);
     }
 
+    public void inputPassword2(String password) {
+        log.info("Insert password for registration");
+//        clickElementandSendKeys(fieldPassword, password);
+        typeLikeHumanWithActions(driver, fieldPassword, password);
+    }
+
     @FindBy(id = "konfirmasi_password")
     public WebElement fieldKonfirmasiPassword;
     public void inputKonfirmasiPassword(String konfirmasiPassword) {
+        log.info("Insert konfirmasi password for registration");
+        typeLikeHumanWithActions(driver, fieldKonfirmasiPassword, konfirmasiPassword);
+    }
+
+    public void inputKonfirmasiPassword2(String konfirmasiPassword) {
         log.info("Insert konfirmasi password for registration");
         clickElementandSendKeys(fieldKonfirmasiPassword, konfirmasiPassword);
     }

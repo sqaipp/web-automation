@@ -1,10 +1,8 @@
 package com.automation.apptests.HomePagesTest;
 
-import com.automation.apptests.LoginTest.LoginTest;
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
+import com.automation.helpers.LoginSteps;
 import com.automation.listeners.TestAllureListener;
-import com.automation.screen.uicomponent.CheckScreen;
-import com.automation.screen.uipages.homepages.homePage;
 import com.automation.utils.BaseTest;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -13,7 +11,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
 
-import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -21,17 +18,15 @@ import static org.testng.AssertJUnit.assertTrue;
 @Listeners({TestAllureListener.class})
 public class InformasiTest extends BaseTest {
 
-    homePage homePage;
-    LoginTest LoginTest = new LoginTest();
-    BasePage BasePage;
+    BasePage BasePage = new BasePage(driver);
 
     @Title("Tentang kami")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "go to Tentang kami", groups = "Home Page", priority = 1)
     public void tentangKami() throws Exception {
-        homePage = new homePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click on button tentang kami
         homePage.clickBtnTentangKamiAfterLogin();
         // verify on the page tentang kami
@@ -44,9 +39,9 @@ public class InformasiTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "go to layanan & program", groups = "Home Page", priority = 1)
     public void layananDanProgram() throws Exception {
-        homePage = new homePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click on button layanan & program
         homePage.clickBtnLayananProgram();
         // verify on the page layanan & program
@@ -59,9 +54,9 @@ public class InformasiTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "go to Tutorial", groups = "Home Page", priority = 1)
     public void tutorial() throws Exception {
-        homePage = new homePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click on button tutorial
         homePage.clickBtnTutorial();
         // verify on the page tutorial
@@ -74,9 +69,9 @@ public class InformasiTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "go to Tutorial", groups = "Home Page", priority = 1)
     public void faq() throws Exception {
-        homePage = new homePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click on button faq
         homePage.clickBtnFAQ();
         // verify on the page faq
@@ -89,9 +84,9 @@ public class InformasiTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "go to Syarat & Ketentuan", groups = "Home Page", priority = 1)
     public void syaratDanKetentuan() throws Exception {
-        homePage = new homePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click on button syarat & ketentuan
         homePage.clickBtnSyaratKetentuan();
         // verify on the page syarat & ketentuan
@@ -104,9 +99,9 @@ public class InformasiTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "go to Kebijakan", groups = "Home Page", priority = 1)
     public void kebijakan() throws Exception {
-        homePage = new homePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click on button kebijakan
         homePage.clickBtnKebijakan();
         // verify on the page kebijakan
@@ -118,11 +113,11 @@ public class InformasiTest extends BaseTest {
     @Title("Verify social media")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Verify social media", groups = "Home Page", priority = 1)
-    public void verifySocialMedia() throws Exception {
-        homePage = new homePage(driver);
-        BasePage = new BasePage(driver);
+    public void verifySocialMedia() {
+        BasePage BasePage = new BasePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // scroll to bottom
         BasePage.scrollToEOP();
         // verify instagram

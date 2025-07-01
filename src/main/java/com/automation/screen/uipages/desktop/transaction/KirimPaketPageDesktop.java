@@ -1,6 +1,7 @@
-package com.automation.screen.uipages.transaction;
+package com.automation.screen.uipages.desktop.transaction;
 
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.interfaces.transaction.KirimPaketPage;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.*;
@@ -10,24 +11,23 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.List;
 import java.util.Objects;
 
 import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
 
 @Slf4j
-public class kirimSekarangPage extends BasePage {
-    public kirimSekarangPage(WebDriver driver) {
+public class KirimPaketPageDesktop extends BasePage implements KirimPaketPage {
+    public KirimPaketPageDesktop(WebDriver driver) {
         super(driver);
     }
 
     @FindBy(className = "wrap-btn")
-    public List<WebElement> buttonKirimSekarang;
+    public List<WebElement> buttonkirimPaket;
     @Step("Clicking on button Kirim Sekarang")
     public void clickButtonKirimPaketSekarang(int index) {
         log.info("Clicking button edit profile");
-        clickElement(buttonKirimSekarang.get(index));
+        clickElement(buttonkirimPaket.get(index));
     }
 
     @Step("Clicking on checkbox S&K")
@@ -68,12 +68,12 @@ public class kirimSekarangPage extends BasePage {
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[4]/div/div/div[2]/div[2]/div[1]/label")).click();
     }
 
-//    @FindAll({@FindBy(id = "modal_lanjut"),
-//            @FindBy(id = "lanjut"),
-//            @FindBy(id = "button_door_to_point"),
-//            @FindBy(className = "ip_btn"),
-//            @FindBy(className = "btn")})
-    @FindBy(className = "btn")
+    @FindAll({@FindBy(id = "modal_lanjut"),
+            @FindBy(id = "lanjut"),
+            @FindBy(id = "button_door_to_point"),
+            @FindBy(className = "ip_btn"),
+            @FindBy(className = "btn")})
+//    @FindBy(className = "btn")
     public List <WebElement> buttonLanjut;
     @Step("Clicking on button Lanjut")
     public void clickButtonLanjut() {
@@ -91,7 +91,6 @@ public class kirimSekarangPage extends BasePage {
                 log.debug("Skipping an element due to error: {}", e.getMessage());
             }
         }
-
         log.warn("'Lanjut' button not found or not clickable.");
     }
 

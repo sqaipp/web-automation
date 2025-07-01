@@ -1,18 +1,16 @@
-package com.automation.screen.uipages.login;
+package com.automation.screen.uipages.desktop.login;
 
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.interfaces.login.ForgotPasswordPage;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
-
 @Slf4j
-public class forgotPasswordPage extends BasePage {
-    public forgotPasswordPage(WebDriver driver) {
+public class ForgotPasswordPageDesktop extends BasePage implements ForgotPasswordPage {
+    public ForgotPasswordPageDesktop(WebDriver driver) {
         super(driver);
     }
 

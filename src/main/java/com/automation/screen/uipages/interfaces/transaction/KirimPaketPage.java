@@ -1,0 +1,44 @@
+package com.automation.screen.uipages.interfaces.transaction;
+
+public interface KirimPaketPage {
+    void clickButtonKirimPaketSekarang(int index);
+    void clickCheckboxSyaratDanKetentuan1();
+    void clickCheckboxSyaratDanKetentuan2();
+    void clickCheckboxSyaratDanKetentuan3();
+    void clickButtonLanjut();
+    void setInsertNamaPenerima(String namaPenerima);
+    void setInsertTelponPenerima( String telponPenerima);
+    void setInsertNomorHpPengirim(String nomorHp);
+    void setInsertEmailPenerima(String emailPenerima);
+    void setInsertKotaPenerima(String kotaPenerima);
+    void chooseKelurahanPenerima(String kelurahanPenerima);
+    void chooseKelurahanPengirim();
+    void setInsertAlamatPenerima(String alamatPenerima);
+    void clickButtonKonfirmasiAlamat();
+    void clickPilihKategori();
+    void clickListKategoriElektronik();
+    void clickButtonMengerti();
+    void setInsertDeskripsiBarang(String deskripsiBarang);
+    void setInsertHargaBarang(String hargaBarang);
+    void setInsertBeratBarang(String beratBarang);
+    void setInsertPanjangBarang(String panjangBarang);
+    void setInsertLebarBarang(String lebarBarang);
+    void setInsertTinggiBarang(String tinggiBarang);
+    void getTotalTransaksi();
+    void clickCheckboxAsuransi();
+    void getTotalTransaksiFinal();
+    void clickButtonKonfirmasiRingkasan();
+    void getTextNomorResiSuccessTransaction();
+    void setInsertKodetoko(String kodetokoPenerima);
+    void chooseKodetokoPenerima();
+    void chooseKodetokoPilihan();
+    void clickCheckboxPenerima();
+    void insertKodetokoPilihan(String kodetokoPilihan);
+    void setInsertKodetokoPenerima(String kodetokoPenerimaPaketJemput);
+    void setInsertAlamatPengirim(String alamat);
+    void setInsertCatatanPengirim(String catatan);
+    void clickButtonPilihWaktuJemput();
+    void clickButtonKonfirmasiWaktuJemput();
+    void setInsertKotaKecamatanPengirim(String kotaKecamatanPengirim);
+    void chooseKotaKecamatanPengirim();
+}

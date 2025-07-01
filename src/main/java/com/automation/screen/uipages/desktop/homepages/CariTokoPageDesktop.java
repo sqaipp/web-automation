@@ -1,23 +1,21 @@
-package com.automation.screen.uipages.homepages;
+package com.automation.screen.uipages.desktop.homepages;
 
-import com.automation.base.base.BasePage;
-import io.qameta.allure.Step;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.interfaces.home.CariTokoPage;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
 import static com.automation.utils.BaseTest.ConfigFileReader;
 
 
 @Slf4j
-public class cariTokoPage extends BasePage {
+public class CariTokoPageDesktop extends BasePage implements CariTokoPage {
 
-    public cariTokoPage(WebDriver driver) {
+    public CariTokoPageDesktop(WebDriver driver) {
         super(driver);
     }
 

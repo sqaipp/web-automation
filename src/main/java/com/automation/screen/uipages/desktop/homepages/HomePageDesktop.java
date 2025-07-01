@@ -1,6 +1,7 @@
-package com.automation.screen.uipages.homepages;
+package com.automation.screen.uipages.desktop.homepages;
 
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.interfaces.home.HomePage;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,16 +9,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
+import java.util.Objects;
 
 import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
 
 
 @Slf4j
-public class homePage extends BasePage {
+public class HomePageDesktop extends BasePage implements HomePage {
 
-    public homePage(WebDriver driver) {
+    public HomePageDesktop(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//*[@id=\"wi\"]/div[1]/div[2]/div/div/div/div[3]/div/a[2]")
@@ -39,7 +44,7 @@ public class homePage extends BasePage {
     public WebElement buttonCekTarif;
 
     @FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[4]/a")
-    public WebElement buttonKirimSekarang;
+    public WebElement buttonkirimPaket;
 
     @FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[5]/a")
     public WebElement buttonCariToko;
@@ -47,7 +52,7 @@ public class homePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[6]/a")
     public WebElement buttonTentangKamiBeforeLogin;
 
-    @FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[7]/a")
+    @FindBy(linkText = "MEMBERSHIP")
     public WebElement buttonMembership;
 
     @FindBy(id = "value_resi")
@@ -111,7 +116,7 @@ public class homePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"wi\"]/div[1]/div[2]/div/div/div/div[3]/div/div[2]/ul/li[4]/a")
     public WebElement buttonSurveyPengiriman;
 
-    @FindBy(xpath = "/html/body/div[1]/div[1]/div[2]/div/div/div/div[3]/div/div[1]")
+    @FindBy(xpath = "/html/body/div[1]/div[1]/div[2]/div/div/div/div[3]/div/div[1]/img")
     public WebElement buttonNotification;
 
     @FindBy(className = "wrap-title")
@@ -200,9 +205,9 @@ public class homePage extends BasePage {
         clickElement(buttonCekTarif);
     }
 
-    public void clickBtnKirimSekarang() {
+    public void clickBtnkirimPaket() {
         log.info("Clicking on Button Kirim Sekarang ");
-        clickElement(buttonKirimSekarang);
+        clickElement(buttonkirimPaket);
     }
 
     public void clickBtnCariToko() {
@@ -233,6 +238,11 @@ public class homePage extends BasePage {
     public void clickBtnMembership() {
         log.info("Clicking on Button Membership ");
         clickElement(buttonMembership);
+//        for(WebElement e : buttonMembership) {
+//            if(Objects.equals(e.getText(), "MEMBERSHIP")) {
+//                clickElement(e);
+//            }
+//        }
     }
 
     public void clickBtnLupaPassword() {
@@ -345,12 +355,12 @@ public class homePage extends BasePage {
 
     public void clickButtonNotification() {
         log.info("Clicking on button notification");
-        clickElement( buttonNotification);
+        clickElement(buttonNotification);
     }
 
     public void clickButtonInfoPromo() {
         log.info("Clicking on button info & promo");
-        clickElement( buttonInfoPromo);
+        clickElement(buttonInfoPromo);
     }
 
     @Step("click button detil notification")

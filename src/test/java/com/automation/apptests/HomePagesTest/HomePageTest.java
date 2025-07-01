@@ -1,9 +1,8 @@
 package com.automation.apptests.HomePagesTest;
 
-import com.automation.apptests.LoginTest.LoginTest;
+import com.automation.helpers.LoginSteps;
 import com.automation.listeners.TestAllureListener;
 import com.automation.screen.uicomponent.CheckScreen;
-import com.automation.screen.uipages.homepages.homePage;
 import com.automation.utils.BaseTest;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -18,9 +17,6 @@ import static org.testng.AssertJUnit.assertTrue;
 @Slf4j
 @Listeners({TestAllureListener.class})
 public class HomePageTest extends BaseTest {
-
-    homePage homePage;
-    LoginTest LoginTest = new LoginTest();
 
     @Title("Verify home page")
     @Severity(SeverityLevel.NORMAL)
@@ -43,7 +39,6 @@ public class HomePageTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Tracking Nomor Resi", groups = "Home Page", priority = 1)
     public void trackingResi() {
-        homePage = new homePage(driver);
         // input nomor resi
         homePage.inputResi(ConfigFileReader.getNoResi());
         // click on button search
@@ -56,7 +51,6 @@ public class HomePageTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Multi Tracking Nomor Resi", groups = "Home Page", priority = 1)
     public void trackingMultiResi() {
-        homePage = new homePage(driver);
         // click button multi resi
         homePage.clickButtonMultiResi();
         // input nomor resi
@@ -71,7 +65,6 @@ public class HomePageTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Tracking Nomor Resi", groups = "Home Page", priority = 1)
     public void failedTrackingResi() {
-        homePage = new homePage(driver);
         // input nomor resi
         homePage.inputResi(ConfigFileReader.getNoResiNotFound());
         // click on button search
@@ -83,14 +76,13 @@ public class HomePageTest extends BaseTest {
                 uiComponent().checkTextScreen()
                                 .isEnabledText("Nomor resi tidak ditemukan", 5) ||
                         uiComponent().checkTextScreen()
-                                .isEnabledText(" Silahkan coba lagi dengan memasukkan kode/captcha.", 5));
+                                .isEnabledText("Silahkan coba lagi dengan memasukkan kode/captcha.", 5));
     }
 
     @Title("Tracking Multi Resi")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Tracking Nomor Multi Resi", groups = "Home Page", priority = 1)
     public void failedTrackingMultiResi() {
-        homePage = new homePage(driver);
         // click button multi resi
         homePage.clickButtonMultiResi();
         // input nomor resi
@@ -104,7 +96,7 @@ public class HomePageTest extends BaseTest {
         // Verify that the tracking number is not found
         assertTrue(
                 uiComponent().checkTextScreen()
-                                .isEnabledText("Tidak ditemukan", 5) ||
+                                .isEnabledText("Tidak Ditemukan", 5) ||
                         uiComponent().checkTextScreen()
                                 .isEnabledText(" Silahkan coba lagi dengan memasukkan kode/captcha.", 5));
     }
@@ -113,7 +105,6 @@ public class HomePageTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Cek tarif paket", groups = "Home Page", priority = 1)
     public void checkTarif() {
-        homePage = new homePage(driver);
         // input kota asal
         homePage.inputAsalKota(ConfigFileReader.getKotaAsal());
         // input kota tujuan
@@ -149,17 +140,15 @@ public class HomePageTest extends BaseTest {
     @Title("Kirim Sekarang")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Kirim sekarang", groups = "Home Page", priority = 1)
-    public void kirimSekarang() {
-        homePage = new homePage(driver);
+    public void kirimPaket() {
         // go to Kirim Sekarang
-        homePage.clickBtnKirimSekarang();
+        homePage.clickBtnkirimPaket();
     }
 
     @Title("Cari toko")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Cari toko", groups = "Home Page", priority = 1)
     public void cariToko() {
-        homePage = new homePage(driver);
         // go to Cari Toko
         homePage.clickBtnCariToko();
     }
@@ -168,7 +157,6 @@ public class HomePageTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Tentang kami", groups = "Home Page", priority = 1)
     public void tentangKami() {
-        homePage = new homePage(driver);
         // go to Tentang Kami
         homePage.clickBtnTentangKamiBeforeLogin();
     }
@@ -176,10 +164,10 @@ public class HomePageTest extends BaseTest {
     @Title("Membership")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Membership", groups = "Home Page", priority = 1)
-    public void membership() throws Exception {
-        homePage = new homePage(driver);
+    public void membership() {
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // go to Membership
         homePage.clickBtnMembership();
     }

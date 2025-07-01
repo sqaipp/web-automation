@@ -1,6 +1,6 @@
 package com.automation.screen.uicomponent;
 
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

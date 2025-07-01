@@ -1,35 +1,36 @@
 package com.automation;
 
-import com.automation.base.base.BasePage;
-import com.automation.screen.uipages.homepages.homePage;
-import com.automation.screen.uipages.login.loginPage;
-import com.automation.screen.uipages.profile.riwayatPage;
-import com.automation.screen.uipages.registration.registrationPage;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.desktop.homepages.HomePageDesktop;
+import com.automation.screen.uipages.desktop.login.LoginPageDesktop;
+import com.automation.screen.uipages.desktop.profile.RiwayatPageDesktop;
+import com.automation.screen.uipages.desktop.registration.RegistrationPageDesktop;
+import org.openqa.selenium.WebDriver;
 
 public class ScreenProvider extends BasePage {
-    public ScreenProvider() {
+    public ScreenProvider(WebDriver driver) {
         super(driver);
     }
 
     /**
      * @return A loginPage object initialized with the provided AppiumDriver.
      */
-    public loginPage getLoginPage() {return new loginPage(driver);}
+    public LoginPageDesktop getLoginPage() {return new LoginPageDesktop(driver);}
 
     /**
      * @return A HomePage object initialized with the provided AppiumDriver.
      */
-    public homePage getHomePage() {return new homePage(driver);}
+    public HomePageDesktop getHomePage() {return new HomePageDesktop(driver);}
 
     /**
      * @return A RegisterScreen object initialized with the provided AppiumDriver.
      */
-    public registrationPage getRegisterScreen() {
-        return new registrationPage(driver);
+    public RegistrationPageDesktop getRegisterScreen() {
+        return new RegistrationPageDesktop(driver);
     }
 
     /**
      * @return A riwayatPage object initialized with the provided AppiumDriver.
      */
-    public riwayatPage getRiwayatPage() {return new riwayatPage(driver);}
+    public RiwayatPageDesktop getRiwayatPage() {return new RiwayatPageDesktop(driver);}
 }

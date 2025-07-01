@@ -1,7 +1,7 @@
-package com.automation.screen.uipages.profile;
+package com.automation.screen.uipages.desktop.profile;
 
-import com.automation.base.base.BasePage;
-import com.automation.dataProviders.ConfigFileReader;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.interfaces.profile.ProfilePage;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.Select;
 import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
 
 @Slf4j
-public class profilePage extends BasePage {
-    public profilePage(WebDriver driver) {
+public class ProfilePageDesktop extends BasePage implements ProfilePage {
+    public ProfilePageDesktop(WebDriver driver) {
         super(driver);
     }
 

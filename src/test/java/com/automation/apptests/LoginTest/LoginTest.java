@@ -1,10 +1,10 @@
 package com.automation.apptests.LoginTest;
 
 import com.automation.screen.uicomponent.CheckScreen;
+import com.automation.screen.uipages.desktop.homepages.HomePageDesktop;
 import com.automation.utils.BaseTest;
 import com.automation.dataProviders.ConfigFileReader;
-import com.automation.screen.uipages.homepages.homePage;
-import com.automation.screen.uipages.login.loginPage;
+import com.automation.screen.uipages.desktop.login.LoginPageDesktop;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import lombok.extern.slf4j.Slf4j;
@@ -19,15 +19,11 @@ import static org.testng.AssertJUnit.assertTrue;
 @Listeners({TestAllureListener.class})
 public class LoginTest extends BaseTest {
     com.automation.dataProviders.ConfigFileReader ConfigFileReader = new ConfigFileReader();
-    loginPage loginPage;
-    homePage homePage;
 
     @Title("Login")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Login test valid", groups = "Login", priority = 1)
     public void validLoginTest() throws Exception {
-        homePage = new homePage(driver);
-        loginPage = new loginPage(driver);
         // click button masuk for login
         homePage.clickBtnMasukForLogin();
         // input username
@@ -46,8 +42,6 @@ public class LoginTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Login test valid", groups = "Login", priority = 1)
     public void logoutTest() throws Exception {
-        homePage = new homePage(driver);
-        loginPage = new loginPage(driver);
         // click button masuk for login
         homePage.clickBtnMasukForLogin();
         // input username
@@ -67,10 +61,8 @@ public class LoginTest extends BaseTest {
     @Title("Login wrong email / phone number")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Login test using wrong password", groups = "Login", priority = 1)
-    public void loginFailureWrongPassword() throws Exception {
+    public void loginFailureWrongPassword() {
         CheckScreen checkScreen = new CheckScreen(driver);
-        homePage = new homePage(driver);
-        loginPage = new loginPage(driver);
         // click button masuk for login
         homePage.clickBtnMasukForLogin();
         // input username
@@ -88,8 +80,6 @@ public class LoginTest extends BaseTest {
     @Test(description = "Login test using wrong username", groups = "Login", priority = 1)
     public void loginFailureWrongUsername() throws Exception {
         CheckScreen checkScreen = new CheckScreen(driver);
-        homePage = new homePage(driver);
-        loginPage = new loginPage(driver);
         // click button masuk for login
         homePage.clickBtnMasukForLogin();
         // input username
@@ -105,9 +95,7 @@ public class LoginTest extends BaseTest {
     @Title("Login using password less than general requirement")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Login test using password less than general requirement", groups = "Login", priority = 1)
-    public void loginFailurePasswordLessThan() throws Exception {
-        homePage = new homePage(driver);
-        loginPage = new loginPage(driver);
+    public void loginFailurePasswordLessThan() {
         // click button masuk for login
         homePage.clickBtnMasukForLogin();
         // input username

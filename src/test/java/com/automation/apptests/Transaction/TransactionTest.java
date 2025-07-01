@@ -1,13 +1,8 @@
 package com.automation.apptests.Transaction;
 
-import com.automation.apptests.HomePagesTest.HomePageTest;
-import com.automation.apptests.LoginTest.LoginTest;
-import com.automation.apptests.Profile.RiwayatTest;
-import com.automation.base.base.BasePage;
+import com.automation.helpers.LoginSteps;
 import com.automation.listeners.TestAllureListener;
-import com.automation.screen.uipages.homepages.homePage;
-import com.automation.screen.uipages.profile.riwayatPage;
-import com.automation.screen.uipages.transaction.kirimSekarangPage;
+import com.automation.screen.uipages.desktop.transaction.KirimPaketPageDesktop;
 import com.automation.utils.BaseTest;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -22,250 +17,251 @@ import static org.testng.AssertJUnit.assertTrue;
 @Slf4j
 @Listeners({TestAllureListener.class})
 public class TransactionTest extends BaseTest {
-    HomePageTest HomePageTest = new HomePageTest();
-    LoginTest LoginTest = new LoginTest();
-    RiwayatTest RiwayatTest = new RiwayatTest();
 
     @Title("Toko dan Antar ke Alamat")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Pengiriman paket melalui toko ke rumah.", groups = "Transaction", priority = 1)
     public void tokoAntarKeAlamat() throws Exception {
-        kirimSekarangPage kirimSekarangPage = new kirimSekarangPage(driver);
+        KirimPaketPageDesktop kirimPaketPage = new KirimPaketPageDesktop(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // go to Kirim Sekarang
-        HomePageTest.kirimSekarang();
+        homePage.clickBtnkirimPaket();
         // click button kirim sekarang toko antar ke alamat
-        kirimSekarangPage.clickButtonKirimPaketSekarang(0); // index kirim paket toko ke alamat
+        kirimPaketPage.clickButtonKirimPaketSekarang(0); // index kirim paket toko ke alamat
         // Verify persetujuan S & K
         loadingWait(5);
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("INFORMASI BARANG YANG TIDAK BOLEH DIKIRIM", 5));
         // click checkbox S&K
-        kirimSekarangPage.clickCheckboxSyaratDanKetentuan1();
+        kirimPaketPage.clickCheckboxSyaratDanKetentuan1();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify persetujuan S & K
         loadingWait(5);
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("TOKO & ANTAR KE ALAMAT", 5));
         // insert nomor telpon pengirim
-        kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
+        kirimPaketPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
 
         // insert nama penerima
-        kirimSekarangPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
+        kirimPaketPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
         // insert nomor telpon penerima
-        kirimSekarangPage.setInsertTelponPenerima(ConfigFileReader.getTelponPenerima());
+        kirimPaketPage.setInsertTelponPenerima(ConfigFileReader.getTelponPenerima());
         // insert email penerima
-        kirimSekarangPage.setInsertEmailPenerima(ConfigFileReader.getEmailPenerima());
+        kirimPaketPage.setInsertEmailPenerima(ConfigFileReader.getEmailPenerima());
         // insert kota
-        kirimSekarangPage.setInsertKotaPenerima(ConfigFileReader.getKotaPenerima());
+        kirimPaketPage.setInsertKotaPenerima(ConfigFileReader.getKotaPenerima());
         // insert kodepos/kelurahan
-        kirimSekarangPage.chooseKelurahanPenerima(ConfigFileReader.getKelurahanPenerima());
+        kirimPaketPage.chooseKelurahanPenerima(ConfigFileReader.getKelurahanPenerima());
         // insert alamat
-        kirimSekarangPage.setInsertAlamatPenerima(ConfigFileReader.getAlamatPenerima());
+        kirimPaketPage.setInsertAlamatPenerima(ConfigFileReader.getAlamatPenerima());
         // set insert alamat pengirim
-        kirimSekarangPage.setInsertAlamatPenerima(ConfigFileReader.getAlamatPenerima());
+        kirimPaketPage.setInsertAlamatPenerima(ConfigFileReader.getAlamatPenerima());
         // click button lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // click button konfirmasi alamat
-        kirimSekarangPage.clickButtonKonfirmasiAlamat();
+        kirimPaketPage.clickButtonKonfirmasiAlamat();
         // click button pilih kategori
-        kirimSekarangPage.clickPilihKategori();
+        kirimPaketPage.clickPilihKategori();
         // click button pilih kategori elektronik
-        kirimSekarangPage.clickListKategoriElektronik();
+        kirimPaketPage.clickListKategoriElektronik();
         // click button mengerti
-        kirimSekarangPage.clickButtonMengerti();
+        kirimPaketPage.clickButtonMengerti();
         // insert deskripsi barang
-        kirimSekarangPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
+        kirimPaketPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
         // insert harga barang
-        kirimSekarangPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
+        kirimPaketPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
         // insert berat barang
-        kirimSekarangPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
+        kirimPaketPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
         // insert panjang barang
-        kirimSekarangPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
+        kirimPaketPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
         // insert lebar barang
-        kirimSekarangPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
+        kirimPaketPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
         // insert tinggi barang
-        kirimSekarangPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
+        kirimPaketPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
         // get text total biaya
-        kirimSekarangPage.getTotalTransaksi();
+        kirimPaketPage.getTotalTransaksi();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify pengiriman
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("KONFIRMASI PENGIRIMAN ANDA", 10));
         // get total transaksi final
-        kirimSekarangPage.getTotalTransaksiFinal();
+        kirimPaketPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
-        kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        kirimPaketPage.clickButtonKonfirmasiRingkasan();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("Pembuatan Nomor Resi Berhasil", 5));
         // get text nomor resi
-        kirimSekarangPage.getTextNomorResiSuccessTransaction();
+        kirimPaketPage.getTextNomorResiSuccessTransaction();
     }
 
     @Title("Toko ke toko")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Pengiriman paket melalui toko ke toko.", groups = "Transaction", priority = 1)
     public void tokoAntarKeToko() throws Exception {
-        kirimSekarangPage kirimSekarangPage = new kirimSekarangPage(driver);
+        KirimPaketPageDesktop kirimPaketPage = new KirimPaketPageDesktop(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // go to Kirim Sekarang
-        HomePageTest.kirimSekarang();
+        homePage.clickBtnkirimPaket();
         // click button kirim sekarang toko antar ke alamat
-        kirimSekarangPage.clickButtonKirimPaketSekarang(1); // index kirim paket toko ke alamat
+        kirimPaketPage.clickButtonKirimPaketSekarang(1); // index kirim paket toko ke alamat
         // Verify persetujuan S & K
         loadingWait(5);
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("INFORMASI BARANG YANG TIDAK BOLEH DIKIRIM", 5));
         // click checkbox S&K
-        kirimSekarangPage.clickCheckboxSyaratDanKetentuan2();
+        kirimPaketPage.clickCheckboxSyaratDanKetentuan2();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify persetujuan S & K
         loadingWait(5);
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("TOKO KE TOKO", 5));
         // insert nomor telpon pengirim
-        kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
+        kirimPaketPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
         // insert nama penerima
-        kirimSekarangPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
+        kirimPaketPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
         // insert nomor telpon penerima
-        kirimSekarangPage.setInsertTelponPenerima(ConfigFileReader.getTelponPenerima());
+        kirimPaketPage.setInsertTelponPenerima(ConfigFileReader.getTelponPenerima());
         // insert email penerima
-        kirimSekarangPage.setInsertEmailPenerima(ConfigFileReader.getEmailPenerima());
+        kirimPaketPage.setInsertEmailPenerima(ConfigFileReader.getEmailPenerima());
         // insert kodetoko
-        kirimSekarangPage.setInsertKodetoko(ConfigFileReader.getKodetoko());
+        kirimPaketPage.setInsertKodetoko(ConfigFileReader.getKodetoko());
         // choose toko penerima
-        kirimSekarangPage.chooseKodetokoPenerima();
+        kirimPaketPage.chooseKodetokoPenerima();
         // click button lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // click button pilih kategori
-        kirimSekarangPage.clickPilihKategori();
+        kirimPaketPage.clickPilihKategori();
         // click button pilih kategori elektronik
-        kirimSekarangPage.clickListKategoriElektronik();
+        kirimPaketPage.clickListKategoriElektronik();
         // click button mengerti
-        kirimSekarangPage.clickButtonMengerti();
+        kirimPaketPage.clickButtonMengerti();
         // insert deskripsi barang
-        kirimSekarangPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
+        kirimPaketPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
         // insert harga barang
-        kirimSekarangPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
+        kirimPaketPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
         // insert berat barang
-        kirimSekarangPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
+        kirimPaketPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
         // insert panjang barang
-        kirimSekarangPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
+        kirimPaketPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
         // insert lebar barang
-        kirimSekarangPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
+        kirimPaketPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
         // insert tinggi barang
-        kirimSekarangPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
+        kirimPaketPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
         // get text total biaya
-        kirimSekarangPage.getTotalTransaksi();
+        kirimPaketPage.getTotalTransaksi();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify pengiriman
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("KONFIRMASI PENGIRIMAN ANDA", 5));
         // get total transaksi final
-        kirimSekarangPage.getTotalTransaksiFinal();
+        kirimPaketPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
-        kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        kirimPaketPage.clickButtonKonfirmasiRingkasan();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("Pembuatan Nomor Resi Berhasil", 5));
         // get text nomor resi
-        kirimSekarangPage.getTextNomorResiSuccessTransaction();
+        kirimPaketPage.getTextNomorResiSuccessTransaction();
     }
 
     @Title("Titip paket")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Titip paket ke toko.", groups = "Transaction", priority = 1)
     public void titipPaketKeToko() throws Exception {
-        kirimSekarangPage kirimSekarangPage = new kirimSekarangPage(driver);
+        KirimPaketPageDesktop kirimPaketPage = new KirimPaketPageDesktop(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // go to Kirim Sekarang
-        HomePageTest.kirimSekarang();
+        homePage.clickBtnkirimPaket();
         // click button kirim sekarang toko antar ke alamat
-        kirimSekarangPage.clickButtonKirimPaketSekarang(2); // index titip paket
+        kirimPaketPage.clickButtonKirimPaketSekarang(2); // index titip paket
         // Verify persetujuan S & K
         loadingWait(5);
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("INFORMASI BARANG YANG TIDAK BOLEH DIKIRIM", 5));
         // click checkbox S&K
-        kirimSekarangPage.clickCheckboxSyaratDanKetentuan3();
+        kirimPaketPage.clickCheckboxSyaratDanKetentuan3();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // insert nomor telpon pengirim
-        kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
+        kirimPaketPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
         // click checkbox penerima
-        kirimSekarangPage.clickCheckboxPenerima();
+        kirimPaketPage.clickCheckboxPenerima();
         // insert kodetoko
-        kirimSekarangPage.insertKodetokoPilihan(ConfigFileReader.getKodetokoPilihan());
+        kirimPaketPage.insertKodetokoPilihan(ConfigFileReader.getKodetokoPilihan());
         // choose toko penerima
-        kirimSekarangPage.chooseKodetokoPilihan();
+        kirimPaketPage.chooseKodetokoPilihan();
         // click button lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // click button pilih kategori
-        kirimSekarangPage.clickPilihKategori();
+        kirimPaketPage.clickPilihKategori();
         // click button pilih kategori elektronik
-        kirimSekarangPage.clickListKategoriElektronik();
+        kirimPaketPage.clickListKategoriElektronik();
         // click button mengerti
-        kirimSekarangPage.clickButtonMengerti();
+        kirimPaketPage.clickButtonMengerti();
         // insert deskripsi barang
-        kirimSekarangPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
+        kirimPaketPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
         // insert harga barang
-        kirimSekarangPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
+        kirimPaketPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
         // insert berat barang
-        kirimSekarangPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
+        kirimPaketPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
         // insert panjang barang
-        kirimSekarangPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
+        kirimPaketPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
         // insert lebar barang
-        kirimSekarangPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
+        kirimPaketPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
         // insert tinggi barang
-        kirimSekarangPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
+        kirimPaketPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
         // get text total biaya
-        kirimSekarangPage.getTotalTransaksi();
+        kirimPaketPage.getTotalTransaksi();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify pengiriman
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("KONFIRMASI PENGIRIMAN ANDA", 5));
         // get total transaksi final
-        kirimSekarangPage.getTotalTransaksiFinal();
+        kirimPaketPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
-        kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        kirimPaketPage.clickButtonKonfirmasiRingkasan();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("Pembuatan Nomor Resi Berhasil", 5));
         // get text nomor resi
-        kirimSekarangPage.getTextNomorResiSuccessTransaction();
+        kirimPaketPage.getTextNomorResiSuccessTransaction();
     }
 
     @Title("Jemput paket & antar ke alamat")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Jemput paket & antar ke alamat", groups = "Transaction", priority = 1)
     public void jemputDanAntarKeAlamat() throws Exception {
-        kirimSekarangPage kirimSekarangPage = new kirimSekarangPage(driver);
+        KirimPaketPageDesktop kirimPaketPage = new KirimPaketPageDesktop(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // go to Kirim Sekarang
-        HomePageTest.kirimSekarang();
+        homePage.clickBtnkirimPaket();
         // click button kirim sekarang toko antar ke alamat
-        kirimSekarangPage.clickButtonKirimPaketSekarang(3); // index titip paket
+        kirimPaketPage.clickButtonKirimPaketSekarang(3); // index titip paket
         // Verify persetujuan S & K
         loadingWait(5);
         assertTrue(
@@ -278,196 +274,190 @@ public class TransactionTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Jemput paket & ambil di toko", groups = "Transaction", priority = 1)
     public void jemputDanAmbilDiToko() throws Exception {
-        kirimSekarangPage kirimSekarangPage = new kirimSekarangPage(driver);
-        BasePage BasePage = new BasePage(driver);
+        KirimPaketPageDesktop kirimPaketPage = new KirimPaketPageDesktop(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // go to Kirim Sekarang
-        HomePageTest.kirimSekarang();
+        homePage.clickBtnkirimPaket();
         // click button kirim sekarang toko antar ke alamat
-        kirimSekarangPage.clickButtonKirimPaketSekarang(4); // index titip paket
+        kirimPaketPage.clickButtonKirimPaketSekarang(4); // index titip paket
         // Verify persetujuan S & K
         loadingWait(5);
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("INFORMASI BARANG YANG TIDAK BOLEH DIKIRIM", 5));
         // click checkbox S&K
-        kirimSekarangPage.clickCheckboxSyaratDanKetentuan1();
+        kirimPaketPage.clickCheckboxSyaratDanKetentuan1();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify page Jemput & ambil di toko
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("JEMPUT & AMBIL DI TOKO", 5));
         // insert nama pengirim
-        kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNamaPengirim());
+        kirimPaketPage.setInsertNomorHpPengirim(ConfigFileReader.getNamaPengirim());
         // insert nomor telpon pengirim
-        kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
+        kirimPaketPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
         // insert kota/kecamatan pengirim
-        kirimSekarangPage.setInsertKotaKecamatanPengirim(ConfigFileReader.getKotaKecamatanPengirim());
+        kirimPaketPage.setInsertKotaKecamatanPengirim(ConfigFileReader.getKotaKecamatanPengirim());
         // choose kota/kecamatan pengirim
-        kirimSekarangPage.chooseKotaKecamatanPengirim();
+        kirimPaketPage.chooseKotaKecamatanPengirim();
         // choose kodepos/kelurahan pengirim
-        kirimSekarangPage.chooseKelurahanPengirim();
+        kirimPaketPage.chooseKelurahanPengirim();
         // set insert alamat pengirim
-        kirimSekarangPage.setInsertAlamatPengirim(ConfigFileReader.getAlamatPengirim());
+        kirimPaketPage.setInsertAlamatPengirim(ConfigFileReader.getAlamatPengirim());
         // insert catatan pengiriman
-        kirimSekarangPage.setInsertCatatanPengirim(ConfigFileReader.getCatatanPengirim());
+        kirimPaketPage.setInsertCatatanPengirim(ConfigFileReader.getCatatanPengirim());
         // click button pilih waktu jemput
-        kirimSekarangPage.clickButtonPilihWaktuJemput();
+        kirimPaketPage.clickButtonPilihWaktuJemput();
         // click button konfirmasi waktu jemput
-        kirimSekarangPage.clickButtonKonfirmasiWaktuJemput();
+        kirimPaketPage.clickButtonKonfirmasiWaktuJemput();
         // insert nama penerima
-        kirimSekarangPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
+        kirimPaketPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
         // insert nomor telpon penerima
-        kirimSekarangPage.setInsertTelponPenerima(ConfigFileReader.getTelponPenerima());
+        kirimPaketPage.setInsertTelponPenerima(ConfigFileReader.getTelponPenerima());
         // insert email penerima
-        kirimSekarangPage.setInsertEmailPenerima(ConfigFileReader.getEmailPenerima());
+        kirimPaketPage.setInsertEmailPenerima(ConfigFileReader.getEmailPenerima());
         // insert kodetoko
-        kirimSekarangPage.setInsertKodetokoPenerima(ConfigFileReader.getKodetokoPenerimaPaketJemput());
+        kirimPaketPage.setInsertKodetokoPenerima(ConfigFileReader.getKodetokoPenerimaPaketJemput());
         // choose toko penerima
-        kirimSekarangPage.chooseKodetokoPenerima();
+        kirimPaketPage.chooseKodetokoPenerima();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // click button pilih kategori
-        kirimSekarangPage.clickPilihKategori();
+        kirimPaketPage.clickPilihKategori();
         // click button pilih kategori elektronik
-        kirimSekarangPage.clickListKategoriElektronik();
+        kirimPaketPage.clickListKategoriElektronik();
         // click button mengerti
-        kirimSekarangPage.clickButtonMengerti();
+        kirimPaketPage.clickButtonMengerti();
         // insert deskripsi barang
-        kirimSekarangPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
+        kirimPaketPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
         // insert harga barang
-        kirimSekarangPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
+        kirimPaketPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
         // insert berat barang
-        kirimSekarangPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
+        kirimPaketPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
         // insert panjang barang
-        kirimSekarangPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
+        kirimPaketPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
         // insert lebar barang
-        kirimSekarangPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
+        kirimPaketPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
         // insert tinggi barang
-        kirimSekarangPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
+        kirimPaketPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
         // get text total biaya
-        kirimSekarangPage.getTotalTransaksi();
+        kirimPaketPage.getTotalTransaksi();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify pengiriman
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("KONFIRMASI PENGIRIMAN ANDA", 5));
         // get total transaksi final
-        kirimSekarangPage.getTotalTransaksiFinal();
+        kirimPaketPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
-        kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        kirimPaketPage.clickButtonKonfirmasiRingkasan();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("Pembuatan Nomor Resi Berhasil", 5));
         // get text nomor resi
-        kirimSekarangPage.getTextNomorResiSuccessTransaction();
-//        // switch to previous browser tab
-//        BasePage.switchBrowserTab(0);
-//        // check on riwayat transaksi
-//        RiwayatTest.goToDetilRiwayat();
+        kirimPaketPage.getTextNomorResiSuccessTransaction();
     }
 
     @Title("Check jam jemput & asuransi on transaction Jemput paket & ambil di toko")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Check jam jemput & asuransi on transaction Jemput paket & ambil di toko", groups = "Transaction", priority = 1)
     public void checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko() throws Exception {
-        kirimSekarangPage kirimSekarangPage = new kirimSekarangPage(driver);
-        BasePage BasePage = new BasePage(driver);
-        homePage homePage = new homePage(driver);
-        riwayatPage riwayatPage = new riwayatPage(driver);
+        KirimPaketPageDesktop kirimPaketPage = new KirimPaketPageDesktop(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // go to Kirim Sekarang
-        HomePageTest.kirimSekarang();
+       homePage.clickBtnkirimPaket();
         // click button kirim sekarang toko antar ke alamat
-        kirimSekarangPage.clickButtonKirimPaketSekarang(4); // index titip paket
+        kirimPaketPage.clickButtonKirimPaketSekarang(4); // index titip paket
         // Verify persetujuan S & K
         loadingWait(5);
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("INFORMASI BARANG YANG TIDAK BOLEH DIKIRIM", 5));
         // click checkbox S&K
-        kirimSekarangPage.clickCheckboxSyaratDanKetentuan1();
+        kirimPaketPage.clickCheckboxSyaratDanKetentuan1();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify page Jemput & ambil di toko
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("JEMPUT & AMBIL DI TOKO", 5));
         // insert nama pengirim
-        kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNamaPengirim());
+        kirimPaketPage.setInsertNomorHpPengirim(ConfigFileReader.getNamaPengirim());
         // insert nomor telpon pengirim
-        kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
+        kirimPaketPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
         // insert kota/kecamatan pengirim
-        kirimSekarangPage.setInsertKotaKecamatanPengirim(ConfigFileReader.getKotaKecamatanPengirim());
+        kirimPaketPage.setInsertKotaKecamatanPengirim(ConfigFileReader.getKotaKecamatanPengirim());
         // choose kota/kecamatan pengirim
-        kirimSekarangPage.chooseKotaKecamatanPengirim();
+        kirimPaketPage.chooseKotaKecamatanPengirim();
         // choose kodepos/kelurahan pengirim
-        kirimSekarangPage.chooseKelurahanPengirim();
+        kirimPaketPage.chooseKelurahanPengirim();
         // set insert alamat pengirim
-        kirimSekarangPage.setInsertAlamatPengirim(ConfigFileReader.getAlamatPengirim());
+        kirimPaketPage.setInsertAlamatPengirim(ConfigFileReader.getAlamatPengirim());
         // insert catatan pengiriman
-        kirimSekarangPage.setInsertCatatanPengirim(ConfigFileReader.getCatatanPengirim());
+        kirimPaketPage.setInsertCatatanPengirim(ConfigFileReader.getCatatanPengirim());
         // click button pilih waktu jemput
-        kirimSekarangPage.clickButtonPilihWaktuJemput();
+        kirimPaketPage.clickButtonPilihWaktuJemput();
         // click button konfirmasi waktu jemput
-        kirimSekarangPage.clickButtonKonfirmasiWaktuJemput();
+        kirimPaketPage.clickButtonKonfirmasiWaktuJemput();
         // insert nama penerima
-        kirimSekarangPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
+        kirimPaketPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
         // insert nomor telpon penerima
-        kirimSekarangPage.setInsertTelponPenerima(ConfigFileReader.getTelponPenerima());
+        kirimPaketPage.setInsertTelponPenerima(ConfigFileReader.getTelponPenerima());
         // insert email penerima
-        kirimSekarangPage.setInsertEmailPenerima(ConfigFileReader.getEmailPenerima());
+        kirimPaketPage.setInsertEmailPenerima(ConfigFileReader.getEmailPenerima());
         // insert kodetoko
-        kirimSekarangPage.setInsertKodetokoPenerima(ConfigFileReader.getKodetokoPenerimaPaketJemput());
+        kirimPaketPage.setInsertKodetokoPenerima(ConfigFileReader.getKodetokoPenerimaPaketJemput());
         // choose toko penerima
-        kirimSekarangPage.chooseKodetokoPenerima();
+        kirimPaketPage.chooseKodetokoPenerima();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // click button pilih kategori
-        kirimSekarangPage.clickPilihKategori();
+        kirimPaketPage.clickPilihKategori();
         // click button pilih kategori elektronik
-        kirimSekarangPage.clickListKategoriElektronik();
+        kirimPaketPage.clickListKategoriElektronik();
         // click button mengerti
-        kirimSekarangPage.clickButtonMengerti();
+        kirimPaketPage.clickButtonMengerti();
         // insert deskripsi barang
-        kirimSekarangPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
+        kirimPaketPage.setInsertDeskripsiBarang(ConfigFileReader.getDeskripsiBarang());
         // insert harga barang
-        kirimSekarangPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
+        kirimPaketPage.setInsertHargaBarang(ConfigFileReader.getHargaBarang());
         // insert berat barang
-        kirimSekarangPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
+        kirimPaketPage.setInsertBeratBarang(ConfigFileReader.getBeratBarang());
         // insert panjang barang
-        kirimSekarangPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
+        kirimPaketPage.setInsertPanjangBarang(ConfigFileReader.getPanjangBarang());
         // insert lebar barang
-        kirimSekarangPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
+        kirimPaketPage.setInsertLebarBarang(ConfigFileReader.getLebarBarang());
         // insert tinggi barang
-        kirimSekarangPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
+        kirimPaketPage.setInsertTinggiBarang(ConfigFileReader.getTinggiBarang());
         // click checkbox asuransi
-        kirimSekarangPage.clickCheckboxAsuransi();
+        kirimPaketPage.clickCheckboxAsuransi();
         // get text total biaya
-        kirimSekarangPage.getTotalTransaksi();
+        kirimPaketPage.getTotalTransaksi();
         // click button Lanjut
-        kirimSekarangPage.clickButtonLanjut();
+        kirimPaketPage.clickButtonLanjut();
         // Verify pengiriman
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("KONFIRMASI PENGIRIMAN ANDA", 5));
         // get total transaksi final
-        kirimSekarangPage.getTotalTransaksiFinal();
+        kirimPaketPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
-        kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        kirimPaketPage.clickButtonKonfirmasiRingkasan();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("Pembuatan Nomor Resi Berhasil", 5));
         // get text nomor resi
-        kirimSekarangPage.getTextNomorResiSuccessTransaction();
+        kirimPaketPage.getTextNomorResiSuccessTransaction();
         // switch to previous browser tab
-        BasePage.switchBrowserTab(0);
+        kirimPaketPage.switchBrowserTab(0);
         // click button profile
         homePage.clickButtonProfile();
         // click button edit profile

@@ -1,10 +1,11 @@
 package com.automation.apptests.Profile;
 
 import com.automation.apptests.LoginTest.LoginTest;
+import com.automation.helpers.LoginSteps;
 import com.automation.listeners.TestAllureListener;
 import com.automation.screen.uicomponent.CheckScreen;
-import com.automation.screen.uipages.homepages.homePage;
-import com.automation.screen.uipages.profile.profilePage;
+import com.automation.screen.uipages.desktop.homepages.HomePageDesktop;
+import com.automation.screen.uipages.desktop.profile.ProfilePageDesktop;
 import com.automation.utils.BaseTest;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -20,19 +21,15 @@ import static org.testng.AssertJUnit.assertTrue;
 @Slf4j
 @Listeners({TestAllureListener.class})
 public class ProfileTest extends BaseTest {
-    LoginTest LoginTest = new LoginTest();
-    homePage homePage = new homePage(driver);
-    profilePage profilePage = new profilePage(driver);
 
     @Title("Profile")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Edit profile", groups = "Profile", priority = 1)
     public void editProfileTest() throws Exception {
         CheckScreen checkScreen = new CheckScreen(driver);
-        homePage = new homePage(driver);
-        profilePage = new profilePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click button profile
         homePage.clickButtonProfile();
         // click button edit profile
@@ -73,10 +70,9 @@ public class ProfileTest extends BaseTest {
     @Test(description = "Close account", groups = "Profile", priority = 1)
     public void closeAccountFailureBlankPassword() throws Exception {
         CheckScreen checkScreen = new CheckScreen(driver);
-        homePage = new homePage(driver);
-        profilePage = new profilePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click button profile
         homePage.clickButtonProfile();
         // click button edit profile
@@ -101,10 +97,9 @@ public class ProfileTest extends BaseTest {
     @Test(description = "Cancel Close account", groups = "Profile", priority = 1)
     public void closeAccountCancel() throws Exception {
         CheckScreen checkScreen = new CheckScreen(driver);
-        homePage = new homePage(driver);
-        profilePage = new profilePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click button profile
         homePage.clickButtonProfile();
         // click button edit profile
@@ -127,10 +122,9 @@ public class ProfileTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Edit password", groups = "Profile", priority = 1)
     public void editPasswordTest() throws Exception {
-        homePage = new homePage(driver);
-        profilePage = new profilePage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click button profile
         homePage.clickButtonProfile();
         // click button edit password

@@ -3,8 +3,6 @@ package com.automation.apptests.LoginTest;
 import com.automation.screen.uicomponent.CheckScreen;
 import com.automation.utils.BaseTest;
 import com.automation.dataProviders.ConfigFileReader;
-import com.automation.screen.uipages.homepages.homePage;
-import com.automation.screen.uipages.login.forgotPasswordPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -20,8 +18,6 @@ import static org.testng.AssertJUnit.assertTrue;
 @Listeners({TestAllureListener.class})
 public class ForgotPasswordTest extends BaseTest {
     ConfigFileReader ConfigFileReader = new ConfigFileReader();
-    homePage homePage;
-    forgotPasswordPage forgotPasswordPage;
 
     @Title("Forgot Password")
     @Description("Forgot Password Test")
@@ -29,7 +25,6 @@ public class ForgotPasswordTest extends BaseTest {
     @Test(groups = "Login", priority = 1)
     public void goToForgotPassword(){
         CheckScreen checkScreen = new CheckScreen(driver);
-        homePage = new homePage(driver);
         // click button masuk
         homePage.clickBtnMasukForLogin();
         // click button forgot password
@@ -43,8 +38,6 @@ public class ForgotPasswordTest extends BaseTest {
     @Test(description = "Forgot Password Not Found Test", groups = "Login", priority = 1)
     public void forgotPasswordNotFound(){
         CheckScreen checkScreen = new CheckScreen(driver);
-        homePage = new homePage(driver);
-        forgotPasswordPage = new forgotPasswordPage(driver);
         // click button masuk
         homePage.clickBtnMasukForLogin();
         // click button forgot password
@@ -64,8 +57,6 @@ public class ForgotPasswordTest extends BaseTest {
     @Test(description = "Forgot Password Test", groups = "Login", priority = 1)
     public void forgotPassword(){
         CheckScreen checkScreen = new CheckScreen(driver);
-        homePage = new homePage(driver);
-        forgotPasswordPage = new forgotPasswordPage(driver);
         // click button masuk
         homePage.clickBtnMasukForLogin();
         // click button forgot password

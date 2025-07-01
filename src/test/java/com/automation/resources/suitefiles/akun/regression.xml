@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" group-by-instances="true">
+    <listeners>
+        <listener class-name="com.automation.listeners.extentReportListener"/>
+    </listeners>
+    <test name="Website New Klik Indomaret">
+        <classes>
+            <class name="com.automation.apptests.Registration.RegistrationTest"/>
+            <class name="com.automation.apptests.LoginTest.LoginTest"/>
+            <class name="com.automation.apptests.LoginTest.ForgotPasswordTest"/>
+            <class name="com.automation.apptests.Transaction.TransactionTest"/>
+            <class name="com.automation.apptests.Transaction.CancelTransactionTest"/>
+            <class name="com.automation.apptests.Transaction.AmbilPaketTest"/>
+            <class name="com.automation.apptests.HomePagesTest.HomePageTest"/>
+            <class name="com.automation.apptests.HomePagesTest.CariTokoTest"/>
+            <class name="com.automation.apptests.HomePagesTest.InformasiTest"/>
+            <class name="com.automation.apptests.Notification.NotificationTest"/>
+            <class name="com.automation.apptests.Profile.ProfileTest"/>
+            <class name="com.automation.apptests.Profile.RiwayatTest"/>
+            <class name="com.automation.apptests.Profile.MembershipTest"/>
+            <class name="com.automation.apptests.Profile.SurveyTest"/>
+        </classes>
+    </test>
+</suite>

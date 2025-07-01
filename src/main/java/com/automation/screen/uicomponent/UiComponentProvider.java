@@ -1,12 +1,12 @@
 package com.automation.screen.uicomponent;
 
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class UiComponentProvider  extends BasePage {
-    public UiComponentProvider() {
+    public UiComponentProvider(WebDriver driver) {
         super(driver);
     }
 

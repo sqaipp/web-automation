@@ -1,12 +1,12 @@
-package com.automation.screen.uipages.profile;
+package com.automation.screen.uipages.desktop.profile;
 
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.interfaces.profile.RiwayatPage;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.util.List;
@@ -16,8 +16,8 @@ import java.util.Random;
 import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
 
 @Slf4j
-public class riwayatPage extends BasePage {
-    public riwayatPage(WebDriver driver) {
+public class RiwayatPageDesktop extends BasePage implements RiwayatPage {
+    public RiwayatPageDesktop(WebDriver driver) {
         super(driver);
     }
 
@@ -42,10 +42,11 @@ public class riwayatPage extends BasePage {
     @Step("click button filter riwayat")
     public void clickButtonFilter() {
         log.info("click button filter");
-        clickElement(iconSearch);
+        clickElement(buttonFilter);
+        loadingWait(1);
     }
 
-    @FindBy(xpath = "//*[@id=\"ul_filter\"]/li[1]/a")
+    @FindBy(xpath = "//a[text()='Semua']")
     public WebElement buttonFilterSemua;
     @Step("click button filter semua")
     public void clickButtonFilterSemua() {
@@ -154,7 +155,7 @@ public class riwayatPage extends BasePage {
         }
     }
 
-    @FindBy(xpath = "//*[@id=\"wi\"]/div[2]/div/div/div/div/div[2]/div[3]/form")
+    @FindBy(id = "unduh-desktop")
     public WebElement buttonUnduhResi;
     @Step("click button unduh label resi")
     public void clickButtonUnduhResi() {

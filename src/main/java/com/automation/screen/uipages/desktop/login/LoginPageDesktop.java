@@ -1,26 +1,29 @@
-package com.automation.screen.uipages.login;
+package com.automation.screen.uipages.desktop.login;
 
-import com.automation.base.base.BasePage;
+import com.automation.base.BasePage;
+import com.automation.screen.uipages.interfaces.login.LoginPage;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
 
 @Slf4j
-public class loginPage extends BasePage {
-    public loginPage(WebDriver driver) {
+public class LoginPageDesktop extends BasePage implements LoginPage {
+    public LoginPageDesktop(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "email")
     public WebElement usernameLogin;
     @Step("Clicking on User Name for Login")
-    public void clickandSendKeysUsername(String username) throws InterruptedException {
+    public void clickandSendKeysUsername(String username) {
         log.info("Clicking Username for Login: {}",username);
         clickElementandClear(usernameLogin);
         loadingWait(2);

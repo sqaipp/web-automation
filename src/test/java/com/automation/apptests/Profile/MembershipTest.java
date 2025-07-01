@@ -1,10 +1,7 @@
 package com.automation.apptests.Profile;
 
-import com.automation.apptests.LoginTest.LoginTest;
+import com.automation.helpers.LoginSteps;
 import com.automation.listeners.TestAllureListener;
-import com.automation.screen.uipages.homepages.homePage;
-import com.automation.screen.uipages.profile.membershipPage;
-import com.automation.screen.uipages.profile.profilePage;
 import com.automation.utils.BaseTest;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -18,20 +15,16 @@ import static org.testng.AssertJUnit.assertTrue;
 @Slf4j
 @Listeners({TestAllureListener.class})
 public class MembershipTest extends BaseTest {
-    LoginTest LoginTest = new LoginTest();
-    homePage homePage = new homePage(driver);
-    membershipPage membershipPage = new membershipPage(driver);
 
     @Title("Daftar Membership")
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Daftar membership", groups = "Profile", priority = 1)
-    public void goToSurvey() throws Exception {
-        homePage = new homePage(driver);
-        membershipPage = new membershipPage(driver);
+    public void daftarMembership() {
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click button membership
-        homePage.clickButtonProfile();
+        homePage.clickBtnMembership();
         // click button daftar membership
         membershipPage.clickButtonDaftarMembership();
     }
@@ -40,12 +33,11 @@ public class MembershipTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Test(description = "Pelajari membership", groups = "Profile", priority = 1)
     public void clickButtonPelajariMembership() throws Exception {
-        homePage = new homePage(driver);
-        membershipPage = new membershipPage(driver);
         // login
-        LoginTest.validLoginTest();
+        LoginSteps loginSteps = new LoginSteps(loginPage, homePage);
+        loginSteps.doValidLogin(ConfigFileReader.getUsername(),ConfigFileReader.getPassword());
         // click button membership
-        homePage.clickButtonProfile();
+        homePage.clickBtnMembership();
         // click button daftar membership
         membershipPage.clickButtonPelajariMembership();
         // verify on the pelajari membership

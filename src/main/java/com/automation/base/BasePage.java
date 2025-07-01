@@ -1,10 +1,11 @@
-package com.automation.base.base;
+package com.automation.base;
 
 import com.automation.dataProviders.ConfigFileReader;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.*;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -14,8 +15,6 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.Duration;
@@ -25,16 +24,15 @@ import java.util.concurrent.TimeUnit;
 
 import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
 
-
 @Slf4j
 public class BasePage {
     /**
      * All WebElements are identified by @FindBy annotation
      */
-    public static WebDriver driver;
+    protected WebDriver driver;
     public static ConfigFileReader config;
     public BasePage(WebDriver driver) {
-        BasePage.driver = driver;
+        this.driver = driver;
         //This initElements method will create all WebElements
         PageFactory.initElements(driver, this);
     }
@@ -191,7 +189,7 @@ public class BasePage {
         return sb.toString();
     }
 
-    public static void performHorizontalScroll(double startXFraction, double endXFraction) {
+    public void performHorizontalScroll(double startXFraction, double endXFraction) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         // Get the document width
@@ -285,8 +283,27 @@ public class BasePage {
      * This function is use for switch tab on browser by index.
      */
     public void switchBrowserTab(int indexTab) {
+        log.info("Switch browser tab index : {}",indexTab);
         Object[] windowHandles=driver.getWindowHandles().toArray();
         driver.switchTo().window((String) windowHandles[indexTab]);
+        loadingWait(2);
+    }
+
+    /**
+     * * This function is use for input string like human typing
+     */
+    public static void typeLikeHumanWithActions(WebDriver driver, WebElement element, String text) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().perform();
+        for (char c : text.toCharArray()) {
+            actions = new Actions(driver);
+            actions.sendKeys(String.valueOf(c)).perform();
+            try {
+                Thread.sleep(50 + new Random().nextInt(100)); // Random delay 50–150 ms
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
     }
 
 }
