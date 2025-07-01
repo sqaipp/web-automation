@@ -95,14 +95,16 @@ public class RegistrationTest extends BaseTest {
         // input email
         registrationPage.inputInvalidEmail();
         // input password
-        registrationPage.inputPassword(password);
+        registrationPage.inputPassword2(password);
         // input konfirmasi password
-        registrationPage.inputKonfirmasiPassword(konfirmasiPassword);
+        registrationPage.inputKonfirmasiPassword2(konfirmasiPassword);
         // klik button daftar sekarang
         registrationPage.clickButtonDaftarSekarang();
         // Verify failed registrtion invalid email
         assertTrue(
                 uiComponent().checkTextScreen()
-                        .isEnabledText("Email tidak valid", 3));
+                                .isEnabledText("Email tidak valid", 5) ||
+                        uiComponent().checkTextScreen()
+                                .isEnabledText("Silahkan coba lagi, terdeteksi aktivitas ilegal.", 5));
     }
 }

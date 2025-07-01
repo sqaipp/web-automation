@@ -13,9 +13,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
 
-import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
-import static org.testng.AssertJUnit.assertTrue;
-
 @Slf4j
 @Listeners({TestAllureListener.class})
 public class CariTokoTest extends BaseTest {

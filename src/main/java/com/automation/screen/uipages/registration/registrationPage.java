@@ -36,11 +36,21 @@ public class registrationPage extends BasePage {
         clickElementandSendKeys(fieldPassword, password);
     }
 
+    public void inputPassword2(String password) {
+        log.info("Insert password for registration");
+        typeLikeHumanWithActions(driver, fieldPassword, password);
+    }
+
     @FindBy(id = "konfirmasi_password")
     public WebElement fieldKonfirmasiPassword;
     public void inputKonfirmasiPassword(String konfirmasiPassword) {
         log.info("Insert konfirmasi password for registration");
         clickElementandSendKeys(fieldKonfirmasiPassword, konfirmasiPassword);
+    }
+
+    public void inputKonfirmasiPassword2(String konfirmasiPassword) {
+        log.info("Insert konfirmasi password for registration");
+        typeLikeHumanWithActions(driver, fieldKonfirmasiPassword, konfirmasiPassword);
     }
 
     @FindBy(id = "submitButton")

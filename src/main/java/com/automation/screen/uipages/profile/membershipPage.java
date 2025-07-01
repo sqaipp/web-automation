@@ -30,6 +30,7 @@ public class membershipPage extends BasePage {
     @Step("click button pelajari membership")
     public void clickButtonPelajariMembership() {
         log.info("click button pelajari membership");
+        performScroll(0.2);
         clickElement(buttonPelajariMembership);
     }
 

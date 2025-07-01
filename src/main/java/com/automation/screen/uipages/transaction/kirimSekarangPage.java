@@ -68,12 +68,11 @@ public class kirimSekarangPage extends BasePage {
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[4]/div/div/div[2]/div[2]/div[1]/label")).click();
     }
 
-//    @FindAll({@FindBy(id = "modal_lanjut"),
-//            @FindBy(id = "lanjut"),
-//            @FindBy(id = "button_door_to_point"),
-//            @FindBy(className = "ip_btn"),
-//            @FindBy(className = "btn")})
-    @FindBy(className = "btn")
+    @FindAll({@FindBy(id = "modal_lanjut"),
+            @FindBy(id = "lanjut"),
+            @FindBy(id = "button_door_to_point"),
+            @FindBy(className = "ip_btn"),
+            @FindBy(className = "btn")})
     public List <WebElement> buttonLanjut;
     @Step("Clicking on button Lanjut")
     public void clickButtonLanjut() {

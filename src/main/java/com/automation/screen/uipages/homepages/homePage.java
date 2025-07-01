@@ -47,7 +47,7 @@ public class homePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[6]/a")
     public WebElement buttonTentangKamiBeforeLogin;
 
-    @FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[7]/a")
+    @FindBy(xpath = "/html/body/div[1]/div[1]/div[2]/div/div/div/div[2]/div/nav/div[2]/ul/li[8]/a")
     public WebElement buttonMembership;
 
     @FindBy(id = "value_resi")

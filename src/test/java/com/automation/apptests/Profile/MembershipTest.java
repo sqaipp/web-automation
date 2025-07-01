@@ -4,7 +4,6 @@ import com.automation.apptests.LoginTest.LoginTest;
 import com.automation.listeners.TestAllureListener;
 import com.automation.screen.uipages.homepages.homePage;
 import com.automation.screen.uipages.profile.membershipPage;
-import com.automation.screen.uipages.profile.profilePage;
 import com.automation.utils.BaseTest;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -31,7 +30,7 @@ public class MembershipTest extends BaseTest {
         // login
         LoginTest.validLoginTest();
         // click button membership
-        homePage.clickButtonProfile();
+        homePage.clickBtnMembership();
         // click button daftar membership
         membershipPage.clickButtonDaftarMembership();
     }
@@ -45,7 +44,7 @@ public class MembershipTest extends BaseTest {
         // login
         LoginTest.validLoginTest();
         // click button membership
-        homePage.clickButtonProfile();
+        homePage.clickBtnMembership();
         // click button daftar membership
         membershipPage.clickButtonPelajariMembership();
         // verify on the pelajari membership

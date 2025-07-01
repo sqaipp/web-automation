@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="[Guritno] First commit for web automation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/base/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/base/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/homepages/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/homepages/homePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/profile/membershipPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/profile/membershipPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/registration/registrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/registration/registrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/transaction/kirimSekarangPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/transaction/kirimSekarangPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/CariTokoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/CariTokoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/InformasiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/InformasiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Profile/MembershipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Profile/MembershipTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Registration/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Registration/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/login_test.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,20 +32,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main-with-desktop-view" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sqaipp"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sqaipp&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sqaipp/web-automation.git",
-    "accountId": "d3ffc3ea-913e-4c04-aae5-14db5e5e4fe0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sqaipp/web-automation.git&quot;,
+    &quot;accountId&quot;: &quot;d3ffc3ea-913e-4c04-aae5-14db5e5e4fe0&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -41,6 +58,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2xzeNXhKOHUGytbaYSZhcqDLZQr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,10 +72,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.AmbilPaketTest.ambilPaket.executor": "Run",
+    "TestNG.C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/login_test.xml.executor": "Run",
+    "TestNG.C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml.executor": "Run",
     "TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat.executor": "Run",
     "TestNG.CancelTransactionTest.cancelTokoAntarKeToko.executor": "Run",
     "TestNG.CancelTransactionTest.cencelTitipPaketKeToko.executor": "Run",
     "TestNG.CariTokoTest.cariToko.executor": "Run",
+    "TestNG.CariTokoTest.executor": "Run",
+    "TestNG.ForgotPasswordTest.executor": "Run",
     "TestNG.ForgotPasswordTest.forgotPassword.executor": "Run",
     "TestNG.ForgotPasswordTest.forgotPasswordNotFound.executor": "Run",
     "TestNG.ForgotPasswordTest.goToForgotPassword.executor": "Run",
@@ -89,7 +113,10 @@
     "TestNG.LoginTest.logoutTest.executor": "Run",
     "TestNG.LoginTest.validLoginTest.executor": "Run",
     "TestNG.MembershipTest.clickButtonPelajariMembership.executor": "Run",
+    "TestNG.MembershipTest.executor": "Run",
+    "TestNG.MembershipTest.goToSurvey.executor": "Run",
     "TestNG.NotificationTest.deleteNotification.executor": "Run",
+    "TestNG.NotificationTest.executor": "Run",
     "TestNG.NotificationTest.goToDetilInfoPromoTest.executor": "Run",
     "TestNG.NotificationTest.goToNotificationTest.executor": "Run",
     "TestNG.NotificationTest.goToStatusPaketTest.executor": "Run",
@@ -99,6 +126,7 @@
     "TestNG.ProfileTest.closeAccountFailureBlankPassword.executor": "Run",
     "TestNG.ProfileTest.editPasswordTest.executor": "Run",
     "TestNG.ProfileTest.editProfileTest.executor": "Run",
+    "TestNG.RegistrationTest.executor": "Run",
     "TestNG.RegistrationTest.registrationConfirmPassWrong.executor": "Run",
     "TestNG.RegistrationTest.registrationEmailNotValid.executor": "Run",
     "TestNG.RegistrationTest.registrationTest.executor": "Run",
@@ -109,6 +137,10 @@
     "TestNG.RiwayatTest.unduhLabelResi.executor": "Run",
     "TestNG.SurveyTest.goToSurvey.executor": "Run",
     "TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko.executor": "Run",
+    "TestNG.TransactionTest.executor": "Run",
+    "TestNG.TransactionTest.titipPaketKeToko.executor": "Run",
+    "TestNG.TransactionTest.tokoAntarKeToko.executor": "Run",
+    "TestNG.com.automation.apptests.Profile.executor": "Run",
     "TestNG.homePageTest.Tracking.executor": "Run",
     "TestNG.homePageTest.failedTracking.executor": "Run",
     "TestNG.homePageTest.failedTrackingMultiResi.executor": "Run",
@@ -136,7 +168,7 @@
       <recent name="com.automation.screen.uipages.transaction" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat">
+  <component name="RunManager" selected="TestNG.C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="klikindomaret-v2-klik-indomaret-test-website" />
       <method v="2">
@@ -148,7 +180,17 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="AmbilPaketTest.ambilPaket" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
@@ -157,63 +199,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.AmbilPaketTest" />
-      <option name="METHOD_NAME" value="ambilPaket" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CancelTransactionTest.cancelTokoAntarKeAlamat" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPP-test-website" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.CancelTransactionTest" />
-      <option name="METHOD_NAME" value="cancelTokoAntarKeAlamat" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CancelTransactionTest.cencelTitipPaketKeToko" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPP-test-website" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.CancelTransactionTest" />
-      <option name="METHOD_NAME" value="cencelTitipPaketKeToko" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.validLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPP-test-website" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.apptests.LoginTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.LoginTest" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.LoginTest.LoginTest" />
-      <option name="METHOD_NAME" value="validLoginTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.TransactionTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -238,13 +225,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransactionTest.titipPaketKeToko" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.TransactionTest" />
+      <option name="METHOD_NAME" value="titipPaketKeToko" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionTest.tokoAntarKeToko" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.TransactionTest" />
+      <option name="METHOD_NAME" value="tokoAntarKeToko" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat" />
-        <item itemvalue="TestNG.AmbilPaketTest.ambilPaket" />
-        <item itemvalue="TestNG.LoginTest.validLoginTest" />
+        <item itemvalue="TestNG.C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" />
+        <item itemvalue="TestNG.TransactionTest.tokoAntarKeToko" />
+        <item itemvalue="TestNG.TransactionTest.titipPaketKeToko" />
+        <item itemvalue="TestNG.TransactionTest" />
         <item itemvalue="TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" />
-        <item itemvalue="TestNG.CancelTransactionTest.cencelTitipPaketKeToko" />
       </list>
     </recent_temporary>
   </component>
@@ -288,6 +311,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Guritno] First commit for web automation" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Guritno] First commit for web automation" />
+    <MESSAGE value="[Guritno] Adjust Code main with Desktop view 20250701" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Guritno] Adjust Code main with Desktop view 20250701" />
   </component>
 </project>
