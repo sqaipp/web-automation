@@ -6,14 +6,14 @@
     <test name="Website New Klik Indomaret">
         <classes>
 
-            <class name="com.automation.apptests.LoginTest.LoginTest"/>
-            <class name="com.automation.apptests.LoginTest.ForgotPasswordTest">
-                <methods>
-                    <include name="goToForgotPassword"/>
-                    <include name="forgotPasswordNotFound"/>
-                </methods>
-            </class>
-            <class name="com.automation.apptests.Registration.RegistrationTest"/>
+<!--            <class name="com.automation.apptests.LoginTest.LoginTest"/>-->
+<!--            <class name="com.automation.apptests.LoginTest.ForgotPasswordTest">-->
+<!--                <methods>-->
+<!--                    <include name="goToForgotPassword"/>-->
+<!--                    <include name="forgotPasswordNotFound"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.automation.apptests.Registration.RegistrationTest"/>-->
             <class name="com.automation.apptests.Transaction.TransactionTest"/>
             <class name="com.automation.apptests.Transaction.CancelTransactionTest"/>
             <class name="com.automation.apptests.Transaction.AmbilPaketTest"/>

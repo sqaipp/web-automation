@@ -135,8 +135,14 @@ public class TransactionTest extends BaseTest {
         assertTrue(
                 uiComponent().checkTextScreen()
                         .isEnabledText("TOKO KE TOKO", 5));
+        // insert nama pengirim
+        kirimSekarangPage.setInsertNamaPengirim(ConfigFileReader.getNamaPengirim());
         // insert nomor telpon pengirim
         kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
+        // insert kota kecamatan pengirim
+        kirimSekarangPage.setInsertKotaKecamatanPengirim(ConfigFileReader.getKotaKecamatanPengirim());
+        // choose kota kecamatan pengirim
+        kirimSekarangPage.chooseKotaKecamatanPengirim();
         // insert nama penerima
         kirimSekarangPage.setInsertNamaPenerima(ConfigFileReader.getNamaPenerima());
         // insert nomor telpon penerima
@@ -207,6 +213,8 @@ public class TransactionTest extends BaseTest {
         kirimSekarangPage.clickCheckboxSyaratDanKetentuan3();
         // click button Lanjut
         kirimSekarangPage.clickButtonLanjut();
+        // insert nama pengirim
+        kirimSekarangPage.setInsertNamaPengirim(ConfigFileReader.getNamaPengirim());
         // insert nomor telpon pengirim
         kirimSekarangPage.setInsertNomorHpPengirim(ConfigFileReader.getNomorHpPengirim());
         // click checkbox penerima

@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="[Guritno] First commit for web automation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" afterDir="false" />
+    <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="[Guritno] Adjust Code main with 20250701">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/base/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/base/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/homepages/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/homepages/homePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/profile/membershipPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/profile/membershipPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/registration/registrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/registration/registrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/dataProviders/ConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/dataProviders/ConfigFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/transaction/kirimSekarangPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/transaction/kirimSekarangPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/CariTokoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/CariTokoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/InformasiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/InformasiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Profile/MembershipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Profile/MembershipTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Registration/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Registration/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/login_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Transaction/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Transaction/TransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/environment/uat.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/environment/uat.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +131,7 @@
     "TestNG.SurveyTest.goToSurvey.executor": "Run",
     "TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko.executor": "Run",
     "TestNG.TransactionTest.executor": "Run",
+    "TestNG.TransactionTest.jemputDanAmbilDiToko.executor": "Run",
     "TestNG.TransactionTest.titipPaketKeToko.executor": "Run",
     "TestNG.TransactionTest.tokoAntarKeToko.executor": "Run",
     "TestNG.com.automation.apptests.Profile.executor": "Run",
@@ -168,7 +162,7 @@
       <recent name="com.automation.screen.uipages.transaction" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml">
+  <component name="RunManager" selected="TestNG.TransactionTest.titipPaketKeToko">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="klikindomaret-v2-klik-indomaret-test-website" />
       <method v="2">
@@ -190,24 +184,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.validLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
+          <option name="PATTERN" value="com.automation.apptests.LoginTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.TransactionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="com.automation.apptests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.LoginTest.LoginTest" />
+      <option name="METHOD_NAME" value="validLoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionTest.jemputDanAmbilDiToko" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
@@ -217,7 +212,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
       <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.TransactionTest" />
-      <option name="METHOD_NAME" value="checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" />
+      <option name="METHOD_NAME" value="jemputDanAmbilDiToko" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -263,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" />
-        <item itemvalue="TestNG.TransactionTest.tokoAntarKeToko" />
         <item itemvalue="TestNG.TransactionTest.titipPaketKeToko" />
-        <item itemvalue="TestNG.TransactionTest" />
-        <item itemvalue="TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" />
+        <item itemvalue="TestNG.TransactionTest.tokoAntarKeToko" />
+        <item itemvalue="TestNG.LoginTest.validLoginTest" />
+        <item itemvalue="TestNG.C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" />
+        <item itemvalue="TestNG.TransactionTest.jemputDanAmbilDiToko" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750922278551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[Guritno] Adjust Code main with 20250701">
+      <option name="closed" value="true" />
+      <created>1751356306682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751356306682</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,6 +315,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Guritno] First commit for web automation" />
     <MESSAGE value="[Guritno] Adjust Code main with Desktop view 20250701" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Guritno] Adjust Code main with Desktop view 20250701" />
+    <MESSAGE value="[Guritno] Adjust Code main with 20250701" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Guritno] Adjust Code main with 20250701" />
   </component>
 </project>

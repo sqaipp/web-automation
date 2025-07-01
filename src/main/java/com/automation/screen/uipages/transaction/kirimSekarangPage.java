@@ -110,6 +110,15 @@ public class kirimSekarangPage extends BasePage {
         clickElementandSendKeys(insertTelponPenerima, telponPenerima);
     }
 
+    @FindBy(id = "nama")
+    public WebElement insertNamaPengirim;
+    @Step("Insert nama pengirim")
+    public void setInsertNamaPengirim(String namaPengirim) {
+        log.info("Insert nama pengirim");
+        clickElementandClear(insertNamaPengirim);
+        clickElementandSendKeys(insertNamaPengirim, namaPengirim);
+    }
+
     @FindBy(id = "phone")
     public WebElement insertNomorHpPengirim;
     @Step("Insert nomor hp pengirim")
@@ -320,7 +329,7 @@ public class kirimSekarangPage extends BasePage {
     @Step("choose kodetoko penerima")
     public void chooseKodetokoPenerima() {
         log.info("choose kodetoko penerima");
-        loadingWait(2);
+        loadingWait(3);
         clickElement(resultListKodetoko.getFirst());
     }
 

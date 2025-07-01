@@ -219,6 +219,7 @@ public class ConfigFileReader {
         else throw new RuntimeException("nama_pengirim not specified in the file.");
     }
 
+
     public String getNomorHpPengirim() {
         String nomorHPPngirim = ConfigFileReaderact().getProperty("nomor_hp_pengirim");
         if (nomorHPPngirim != null) return nomorHPPngirim;
