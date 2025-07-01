@@ -30,7 +30,6 @@ public class CancelTransactionTest extends BaseTest {
     @Test(description = "Cancel transaction Pengiriman paket melalui toko ke toko.", groups = "Transaction", priority = 1)
     public void cancelTokoAntarKeToko() throws Exception {
         kirimSekarangPage kirimSekarangPage = new kirimSekarangPage(driver);
-        BasePage BasePage = new BasePage(driver);
         homePage homePage = new homePage(driver);
         riwayatPage riwayatPage = new riwayatPage(driver);
         // login
@@ -98,8 +97,9 @@ public class CancelTransactionTest extends BaseTest {
         // click button konfirmasi ringkasan
         kirimSekarangPage.clickButtonKonfirmasiRingkasan();
         // switch browser tab
-        BasePage.switchBrowserTab(0);
+        homePage.switchBrowserTab(0);
         // click button profile
+        loadingWait(5);
         homePage.clickButtonProfile();
         // click button edit profile
         homePage.clickButtonRiwayat();
@@ -284,15 +284,16 @@ public class CancelTransactionTest extends BaseTest {
         // click button konfirmasi ringkasan
         kirimSekarangPage.clickButtonKonfirmasiRingkasan();
         // switch browser tab
-        BasePage.switchBrowserTab(0);
+        homePage.switchBrowserTab(0);
         // click button profile
+        loadingWait(5);
         homePage.clickButtonProfile();
         // click button edit profile
         homePage.clickButtonRiwayat();
         // verify on the profile page
         assertTrue(
                 uiComponent().checkTextScreen()
-                        .isEnabledElement(screen().getRiwayatPage().fieldSearchRiwayat, 3));
+                        .isEnabledElement(screen().getRiwayatPage().fieldSearchRiwayat, 10));
         // click button batalkan AWB
         riwayatPage.clickButtonBatalkanAWB();
         // choose reason pembatalan AWB
