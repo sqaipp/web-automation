@@ -418,4 +418,18 @@ public class kirimSekarangPage extends BasePage {
         clickElement(resultListKotaPengirim.getFirst());
     }
 
+    @FindBy(id = "swal2-content")
+    public WebElement warningIllegalActivity;
+    @FindBy(className = "swal2-confirm")
+    public WebElement buttonOkIllegalActivity;
+    @Step("check warning illegal activity")
+    public void checkWarningIllegalActivity() {
+        log.info("check warning illegal activity");
+        if(isElementDisplayed(warningIllegalActivity)) {
+            clickElement(buttonOkIllegalActivity);
+            loadingWait(1);
+            clickElement(buttonKonfirmasiRingkasan);
+        }
+    }
+
 }

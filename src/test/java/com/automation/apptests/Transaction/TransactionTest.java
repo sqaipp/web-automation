@@ -367,6 +367,8 @@ public class TransactionTest extends BaseTest {
         kirimSekarangPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
         kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        // check warning illegal activity
+        kirimSekarangPage.checkWarningIllegalActivity();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
@@ -384,7 +386,6 @@ public class TransactionTest extends BaseTest {
     @Test(description = "Check jam jemput & asuransi on transaction Jemput paket & ambil di toko", groups = "Transaction", priority = 1)
     public void checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko() throws Exception {
         kirimSekarangPage kirimSekarangPage = new kirimSekarangPage(driver);
-        BasePage BasePage = new BasePage(driver);
         homePage homePage = new homePage(driver);
         riwayatPage riwayatPage = new riwayatPage(driver);
         // login
@@ -468,6 +469,8 @@ public class TransactionTest extends BaseTest {
         kirimSekarangPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
         kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        // check warning illegal activity
+        kirimSekarangPage.checkWarningIllegalActivity();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
@@ -475,7 +478,7 @@ public class TransactionTest extends BaseTest {
         // get text nomor resi
         kirimSekarangPage.getTextNomorResiSuccessTransaction();
         // switch to previous browser tab
-        BasePage.switchBrowserTab(0);
+        kirimSekarangPage.switchBrowserTab(0);
         // click button profile
         homePage.clickButtonProfile();
         // click button edit profile
@@ -493,7 +496,7 @@ public class TransactionTest extends BaseTest {
         // verify text jadwal jemput
         assertTrue(
                 uiComponent().checkTextScreen()
-                        .isEnabledElement(screen().getRiwayatPage().textJadwalJemput, 3));
+                        .isEnabledText("Jadwal Jemput", 3));
         // verify text biaya asuransi
         assertTrue(
                 uiComponent().checkTextScreen()

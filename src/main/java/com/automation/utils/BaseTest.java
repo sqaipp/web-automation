@@ -30,9 +30,8 @@ public class BaseTest {
                 System.setProperty("webdriver.chrome.driver", localProperty);
                 ChromeOptions options = new ChromeOptions();
                 options.setHeadless(false);
-                options.addArguments("--start-maximized");
                 if(webType.equalsIgnoreCase("fullWeb")) {
-                    options.addArguments("--window-size=1920,1080");
+                    options.addArguments("--start-maximized");
                 } else {
                     options.addArguments("--window-size=320,1080");
                 }
@@ -52,7 +51,7 @@ public class BaseTest {
             } else {
                 throw new IllegalArgumentException("Invalid browser name: " + browserName);
             }
-//            driver.manage().deleteAllCookies();
+            driver.manage().deleteAllCookies();
             driver.get(testUrl);
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             String currentURL = driver.getCurrentUrl();
