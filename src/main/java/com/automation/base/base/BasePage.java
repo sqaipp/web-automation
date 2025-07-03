@@ -286,8 +286,19 @@ public class BasePage {
      * This function is use for switch tab on browser by index.
      */
     public void switchBrowserTab(int indexTab) {
-        Object[] windowHandles=driver.getWindowHandles().toArray();
+        Set<String> handles = driver.getWindowHandles();
+        if (handles.size() <= 1) {
+            System.out.println("❗ Hanya ada 1 tab. Tidak melakukan switch.");
+            return;
+        }
+
+        Object[] windowHandles = handles.toArray();
+        if (indexTab < 0 || indexTab >= windowHandles.length) {
+            System.out.println("❗ Index tab tidak valid: " + indexTab);
+            return;
+        }
         driver.switchTo().window((String) windowHandles[indexTab]);
+        System.out.println("✅ Switched to tab index: " + indexTab);
     }
 
     /**

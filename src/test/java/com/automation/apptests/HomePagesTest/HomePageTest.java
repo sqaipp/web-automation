@@ -83,7 +83,7 @@ public class HomePageTest extends BaseTest {
                 uiComponent().checkTextScreen()
                                 .isEnabledText("Nomor resi tidak ditemukan", 5) ||
                         uiComponent().checkTextScreen()
-                                .isEnabledText(" Silahkan coba lagi dengan memasukkan kode/captcha.", 5));
+                                .isEnabledText("Silahkan coba lagi dengan memasukkan kode/captcha.", 5));
     }
 
     @Title("Tracking Multi Resi")

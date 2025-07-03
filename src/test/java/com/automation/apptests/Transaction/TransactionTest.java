@@ -102,6 +102,8 @@ public class TransactionTest extends BaseTest {
         kirimSekarangPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
         kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        // check warning illegal activity
+        kirimSekarangPage.checkWarningIllegalActivity();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
@@ -185,6 +187,8 @@ public class TransactionTest extends BaseTest {
         kirimSekarangPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
         kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        // check warning illegal activity
+        kirimSekarangPage.checkWarningIllegalActivity();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
@@ -255,6 +259,8 @@ public class TransactionTest extends BaseTest {
         kirimSekarangPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
         kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        // check warning illegal activity
+        kirimSekarangPage.checkWarningIllegalActivity();
         // Verify success transaction
         assertTrue(
                 uiComponent().checkTextScreen()
@@ -367,6 +373,8 @@ public class TransactionTest extends BaseTest {
         kirimSekarangPage.getTotalTransaksiFinal();
         // click button konfirmasi ringkasan
         kirimSekarangPage.clickButtonKonfirmasiRingkasan();
+        // check warning illegal activity
+        kirimSekarangPage.checkWarningIllegalActivity();
         // check warning illegal activity
         kirimSekarangPage.checkWarningIllegalActivity();
         // Verify success transaction

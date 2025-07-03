@@ -35,6 +35,7 @@ public class ConfigFileReader {
         return properties;
     }
 
+
     public Properties ConfigFileReaderact() {
         BufferedReader reader;
         try {
@@ -416,5 +417,6 @@ public class ConfigFileReader {
 //        if (reason != null) return reason;
 //        else throw new RuntimeException("reason_cancelation not specified in the file.");
 //    }
+
 
 }

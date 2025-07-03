@@ -1,6 +1,7 @@
 package com.automation.screen.uipages.homepages;
 
 import com.automation.base.base.BasePage;
+import com.automation.dataProviders.ConfigFileReader;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.testng.SkipException;
+
 import java.util.List;
 
 import static com.automation.screen.uicomponent.UiComponentProvider.loadingWait;
@@ -174,6 +177,9 @@ public class homePage extends BasePage {
     @FindBy(className = "alamat-footer-content")
     public WebElement textOfficeAddress;
 
+    @FindBy(className = "button-menu")
+    public WebElement buttonMenuMobileView;
+
 
     public void clickBtnMasukForLogin() {
         log.info("Clicking on button Login ");
@@ -241,7 +247,7 @@ public class homePage extends BasePage {
     }
 
     public void inputResi(String noResi) {
-        log.info("Inut nomor resi");
+        log.info("Input nomor resi");
         clickElementandSendKeys(fieldInputResi, noResi);
     }
 
@@ -267,12 +273,14 @@ public class homePage extends BasePage {
 
     public void insertCapcha() {
         log.info("get text capcha and insert");
-        clickElementandSendKeys(fieldTextCapcha, textCapcha.getAttribute("textContent")); // langsung input semua char captcha
+        loadingWait(1);
+        typeLikeHumanWithActions(driver, fieldTextCapcha, textCapcha.getAttribute("textContent"));
+//        clickElementandSendKeys(fieldTextCapcha, textCapcha.getAttribute("textContent")); // langsung input semua char captcha
 //        char[] captcha = textCapcha.getAttribute("textContent").toCharArray();
 //        for (char c : captcha) { // input per char satu per satu
 //            clickElementandSendKeys(fieldTextCapcha, String.valueOf(c));
 //        }
-//        loadingWait(1);
+        loadingWait(1);
         clickElement(buttonTerapkanCapcha);
     }
 

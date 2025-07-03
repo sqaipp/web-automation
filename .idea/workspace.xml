@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="[Guritno] Adjust Code main with 20250701 - 1747">
+    <list default="true" id="54274d26-0b50-4339-9e26-3a37e4f880ac" name="Changes" comment="[Guritno] Adjust Code main add handling for illegal activity 20250702 - 1018">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/transaction/kirimSekarangPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/transaction/kirimSekarangPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/utils/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/base/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/base/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/dataProviders/ConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/dataProviders/ConfigFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/homepages/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/screen/uipages/homepages/homePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/HomePagesTest/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Transaction/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/apptests/Transaction/TransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/environment/uat.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/environment/uat.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HomePageTest.executor": "Run",
+    "JUnit.HomePagesTest in IPP-test-website.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -83,6 +87,7 @@
     "TestNG.HomePageTest.kirimSekarang.executor": "Run",
     "TestNG.HomePageTest.membership.executor": "Run",
     "TestNG.HomePageTest.trackingMultiResi.executor": "Run",
+    "TestNG.HomePageTest.trackingResi.executor": "Run",
     "TestNG.InformasiTest.executor": "Run",
     "TestNG.InformasiTest.faq.executor": "Run",
     "TestNG.InformasiTest.layananDanProgram.executor": "Run",
@@ -132,7 +137,9 @@
     "TestNG.TransactionTest.executor": "Run",
     "TestNG.TransactionTest.jemputDanAmbilDiToko.executor": "Run",
     "TestNG.TransactionTest.titipPaketKeToko.executor": "Run",
+    "TestNG.TransactionTest.tokoAntarKeAlamat.executor": "Run",
     "TestNG.TransactionTest.tokoAntarKeToko.executor": "Run",
+    "TestNG.com.automation.apptests.HomePagesTest.executor": "Run",
     "TestNG.com.automation.apptests.Profile.executor": "Run",
     "TestNG.homePageTest.Tracking.executor": "Run",
     "TestNG.homePageTest.failedTracking.executor": "Run",
@@ -161,7 +168,7 @@
       <recent name="com.automation.screen.uipages.transaction" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TransactionTest.titipPaketKeToko">
+  <component name="RunManager" selected="TestNG.LoginTest.validLoginTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="klikindomaret-v2-klik-indomaret-test-website" />
       <method v="2">
@@ -173,35 +180,7 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPP-test-website" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CancelTransactionTest.cancelTokoAntarKeAlamat" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPP-test-website" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.CancelTransactionTest" />
-      <option name="METHOD_NAME" value="cancelTokoAntarKeAlamat" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InformasiTest.faq" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
@@ -210,8 +189,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.InformasiTest" />
-      <option name="METHOD_NAME" value="faq" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.failedTrackingResi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.HomePagesTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
+      <option name="METHOD_NAME" value="failedTrackingResi" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -219,7 +215,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.trackingResi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.HomePagesTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.HomePagesTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.HomePagesTest.HomePageTest" />
+      <option name="METHOD_NAME" value="trackingResi" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.validLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPP-test-website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.apptests.LoginTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.apptests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.LoginTest.LoginTest" />
+      <option name="METHOD_NAME" value="validLoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionTest.tokoAntarKeAlamat" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPP-test-website" />
       <extension name="coverage">
         <pattern>
@@ -229,25 +261,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
       <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.TransactionTest" />
-      <option name="METHOD_NAME" value="checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransactionTest.titipPaketKeToko" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPP-test-website" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.apptests.Transaction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.apptests.Transaction" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.apptests.Transaction.TransactionTest" />
-      <option name="METHOD_NAME" value="titipPaketKeToko" />
+      <option name="METHOD_NAME" value="tokoAntarKeAlamat" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -257,11 +271,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TransactionTest.titipPaketKeToko" />
-        <item itemvalue="TestNG.C:/Users/USER/Documents/GitHub/web-automation/src/test/java/com/automation/resources/suitefiles/akun/regression_test.xml" />
-        <item itemvalue="TestNG.TransactionTest.checkJamJemputAndAsuransiTransactionJemputDanAmbilDiToko" />
-        <item itemvalue="TestNG.InformasiTest.faq" />
-        <item itemvalue="TestNG.CancelTransactionTest.cancelTokoAntarKeAlamat" />
+        <item itemvalue="TestNG.LoginTest.validLoginTest" />
+        <item itemvalue="TestNG.TransactionTest.tokoAntarKeAlamat" />
+        <item itemvalue="TestNG.HomePageTest.failedTrackingResi" />
+        <item itemvalue="TestNG.HomePageTest" />
+        <item itemvalue="TestNG.HomePageTest.trackingResi" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751366879046</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Guritno] Adjust Code main add handling for illegal activity 20250702 - 1018">
+      <option name="closed" value="true" />
+      <created>1751426345589</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751426345589</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,6 +354,7 @@
     <MESSAGE value="[Guritno] Adjust Code main with Desktop view 20250701" />
     <MESSAGE value="[Guritno] Adjust Code main with 20250701" />
     <MESSAGE value="[Guritno] Adjust Code main with 20250701 - 1747" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Guritno] Adjust Code main with 20250701 - 1747" />
+    <MESSAGE value="[Guritno] Adjust Code main add handling for illegal activity 20250702 - 1018" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Guritno] Adjust Code main add handling for illegal activity 20250702 - 1018" />
   </component>
 </project>
